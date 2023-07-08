@@ -1,0 +1,181 @@
+ /* Layout */
+ /* * {outline: 1px solid #ccc;} */
+
+
+/* 
+========================  
+Visual Section
+========================  
+*/
+
+.visual {
+	overflow:hidden;
+	position:relative;
+	width: 100%;
+	height: 100vh;
+	font-size: 34px;
+	background: var(--color-key);
+}
+.visual__logo {
+	z-index: 1;
+	position: absolute;
+	top: 29%;
+	left: 50%;
+	transform: translateX(-50%);
+	width:70px;
+	height:auto;
+}
+.visual__scroll {
+	z-index: 1;
+	position: absolute;
+	top: 89%;
+	left: 50%;
+	transform: translateX(-50%);
+	font-size: 10px;
+	color: #fff;
+	
+}
+.visual__scroll::after {
+	content: "";
+	border: 1px solid #fff;
+	border-width: 0 0 1px 1px;
+	border: 0 0 1px 1px;
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	top: 16px;
+	left: 50%;
+	margin-left: -10px;
+	transform: rotate(-45deg);
+	transition:all 0.5s
+}
+.visual__scroll:hover::after {
+	top: 22px;
+}
+
+.visual::before {
+	display: none;
+	content: "";
+	position:absolute;
+	top:0;
+	left:0;
+	width: 100%;
+	height: 100%;
+	background: #000;
+	opacity:0.5;
+}
+.visual .container > div {
+	width: 50%;
+}
+.visual__text {
+	padding: 0 100px;
+	box-sizing: border-box;
+	color: #fff;
+}
+.visual__text p {
+	opacity: 0;
+	animation: rtlMove 1s forwards;
+}
+.visual__bn img {
+	opacity: 0;
+	animation: rtlMove 1s forwards;
+}
+@keyframes rtlMove {
+	0% {padding-left: 30px; opacity: 0;}
+	100% {padding-left: 0; opacity:1;}
+}
+.visual__text .text-01 {
+	animation-delay: 1s;
+}
+.visual__text .text-02 {
+	animation-delay: 1.3s;
+}
+.visual__text .text-03 {
+	animation-delay: 1.5s;
+}
+
+.visual__bn img {
+	width: 100%;
+	animation-delay: 0.3s;
+}
+
+
+/* 기능 */
+.depth1__item.active {
+}
+.depth1__item.active > a {
+	color: #222;
+	font-weight: bold;
+}
+.depth1__item.active .gnb__2depth{
+	height: 400px;
+	opacity:1;
+}
+.visual.active::before {
+	display: block;
+}
+
+
+/* 
+========================  
+Video Section 
+========================  
+*/
+.video-section {
+	position:relative;
+	overflow:hidden;
+}
+.video-section .inner {
+	padding: 2rem 4rem;
+}
+.video-section .title-box {
+	background:#fff;
+	color:var(--color-key);
+	font-size: 3rem;
+}
+.video-section .title {
+	line-height: 1;
+}
+.video-section video {width:100%}
+.flag-group {
+	display:flex;
+	gap:1rem;
+}
+.flag-group li {
+	background: url(../images/flag_01.svg)no-repeat;
+	width: 40px;
+	height: 30px;
+}
+.flag-group li:nth-child(2) {
+	background-image:url(../images/flag_02.svg) ;
+} 
+.flag-group li:nth-child(3) {
+	background-image:url(../images/flag_03.svg) ;
+} 
+.flag-group li:nth-child(4) {
+	background-image:url(../images/flag_04.svg) ;
+} 
+.flag-group li:nth-child(5) {
+	background-image:url(../images/flag_05.svg) ;
+} 
+.flag-group li:nth-child(6) {
+	background-image:url(../images/flag_06.svg) ;
+} 
+.flag-group li:nth-child(7) {
+	background-image:url(../images/flag_07.svg) ;
+} 
+.flag-group li:nth-child(8) {
+	background-image:url(../images/flag_08.svg) ;
+} 
+.video-section .moving-text {
+	z-index:1;
+	position:absolute;
+	top:0;
+	right:-50%;
+	width:100%;
+	height:auto;
+	transform:rotate(-90deg) translate(-50%, 0);
+	background:#fff;
+	font-size: 2rem;
+	text-align: center;
+}
