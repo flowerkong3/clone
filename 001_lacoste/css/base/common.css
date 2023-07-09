@@ -1,5 +1,12 @@
 @charset "utf-8";
 
+html {
+	font-size:62.5%
+}
+body {
+	font-size: 1rem;
+}
+
 /* Common */
 .hide {
 	display: block;
@@ -14,4 +21,24 @@
 	display:flex;
 	justify-content: center;
 	align-items: center;
+}
+
+section .inner {
+	padding: 5rem 10rem;
+}
+.title-box {
+	background:#fff;
+	color:var(--color-key);
+	font-size: 3rem;
+}
+.title {
+	line-height: 1;
+	font-size: 5rem;
+}
+
+
+@media screen and (max-width:1000px) {
+	html {
+		font-size:8px;
+	}
 }

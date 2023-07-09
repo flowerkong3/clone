@@ -68,7 +68,7 @@ Visual Section
 	width: 50%;
 }
 .visual__text {
-	padding: 0 100px;
+	padding: 0 10rem;
 	box-sizing: border-box;
 	color: #fff;
 }
@@ -126,7 +126,7 @@ Video Section
 	overflow:hidden;
 }
 .video-section .inner {
-	padding: 2rem 4rem;
+	padding: 5rem 10rem;
 }
 .video-section .title-box {
 	background:#fff;
@@ -134,17 +134,30 @@ Video Section
 	font-size: 3rem;
 }
 .video-section .title {
+	padding: 5rem 0 0;
 	line-height: 1;
+	font-size: 5rem;
 }
-.video-section video {width:100%}
+.video-section .video {
+	position: relative;
+	width: 100%;
+	height: 600px;
+}
+.video-section video {
+	position: absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height: auto;
+}
 .flag-group {
 	display:flex;
 	gap:1rem;
 }
 .flag-group li {
 	background: url(../images/flag_01.svg)no-repeat;
-	width: 40px;
-	height: 30px;
+	width: 4rem;
+	height: 3rem;
 }
 .flag-group li:nth-child(2) {
 	background-image:url(../images/flag_02.svg) ;
@@ -167,15 +180,82 @@ Video Section
 .flag-group li:nth-child(8) {
 	background-image:url(../images/flag_08.svg) ;
 } 
-.video-section .moving-text {
+/* .video-section .moving-text {
 	z-index:1;
 	position:absolute;
 	top:0;
 	right:-50%;
 	width:100%;
-	height:auto;
+	height:4.8rem;
 	transform:rotate(-90deg) translate(-50%, 0);
 	background:#fff;
 	font-size: 2rem;
 	text-align: center;
+} */
+.video-section .moving-text {
+	overflow-x: hidden;
+	position: relative;
+	width: 115vw;
+	max-width: 100%;
+	height: 6rem;
+	transform: rotate(-90deg);
+	top: -45rem;
+	right: -48.3%;
+	display: flex;
+	align-items: center;
+	font-size: 3rem;
+	background: #fff;
+	color: var(--color-key);
+}
+.video-section .moving-text .track {
+	position: absolute;
+  white-space: nowrap;
+  /* will-change: transform; */
+  animation: marquee 32s linear infinite;
+}
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+
+/* 
+========================  
+Section-3 
+========================  
+*/
+.section-3 {
+	position: relative;
+	background: var(--color-key);
+}
+.section-3 .title-box {
+	background:var(--color-key);
+	color:var(--white);
+}
+.section-3 .img {
+	display: flex;
+}
+.section-3 .img img {
+	width:100%;
+	display: block;
+}
+.section-3 .btn-group {
+	position: absolute;
+	bottom:5rem;
+	left:50%;
+	transform: translateX(-50%);
+}
+.section-3 button {
+	display: block;
+	margin:.9rem 0;
+	width:13rem;
+	height: 5.4rem;
+	border-radius: 5.4rem;
+	background:var(--white);
+	font-size: 1.5rem;
+	transition: all 0.5s;
+}
+.section-3 button:hover {
+	background: var(--black);
+	color: var(--white);
 }

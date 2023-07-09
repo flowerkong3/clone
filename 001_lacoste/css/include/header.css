@@ -86,11 +86,12 @@
 .gnb__depth1 > li > a {
 	display:block;
 	position:relative;
+	font-size: 1.5rem;
 }
 .gnb__depth1 > li > a::after {
 	content:"";
 	position:absolute;
-	top:5px;
+	top:0.3rem;
 	/* transform:translateY(-50%); */
 	right:-15px;
 	width:5px;
@@ -101,7 +102,7 @@
 }
 .gnb__2depth {
 	position:absolute;
-	top:139px;
+	top:12rem;
 	left:0;
 	overflow:hidden;
 	opacity:0;
@@ -113,6 +114,7 @@
 }
 .gnb__2depth a {
 	color: #777;
+	font-size:1.5rem;
 }
 .gnb__2depth a:hover {
 	text-decoration: underline;
