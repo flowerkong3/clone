@@ -38,6 +38,17 @@ section .inner {
 	font-size: 5rem;
 }
 
+.btn--close {
+	position:absolute;
+	left:90%;
+	top:15px;
+	font-size: 20px;
+	width: 30px;
+	height:30px;
+	background: url(../../images/btn_close.png)no-repeat top /cover;
+	cursor:pointer;
+}
+
 
 @media screen and (max-width:1000px) {
 	html {

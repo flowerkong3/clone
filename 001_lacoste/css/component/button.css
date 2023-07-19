@@ -14,3 +14,12 @@
 	background: var(--black);
 	color: var(--white);
 }
+.btn-type2 {
+	background: var(--black);
+	color: var(--white);
+}
+.btn-type2:hover {
+	background: var(--white);
+	color: var(--color);
+	border: 1px solid #ccc;
+}
