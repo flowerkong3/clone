@@ -8,3 +8,5 @@
 @import url(../css/include/header.css); /* 헤더 */
 @import url(../css/include/footer.css);  /* 푸터 */
 
+@import url(../css/component/button.css);  /* 버튼 */
+

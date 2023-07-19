@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+.btn {
+	display: block;
+	margin:.9rem 0;
+	width:13rem;
+	height: 5.4rem;
+	border-radius: 5.4rem;
+	background:var(--white);
+	font-size: 1.5rem;
+	transition: all 0.5s;
+}
+.btn:hover {
+	background: var(--black);
+	color: var(--white);
+}

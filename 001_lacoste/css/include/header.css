@@ -9,6 +9,7 @@
 	background:#fff;
 }
 .header__inner {
+	padding:20px 0 0;
 	width:90vw; 
 	margin:0 auto;
 }
@@ -102,7 +103,7 @@
 }
 .gnb__2depth {
 	position:absolute;
-	top:12rem;
+	top:115px;
 	left:0;
 	overflow:hidden;
 	opacity:0;
@@ -150,7 +151,7 @@
 .btn--close {
 	position:absolute;
 	left:90%;
-	top:0;
+	top:15px;
 	font-size: 20px;
 	width: 30px;
 	height:30px;

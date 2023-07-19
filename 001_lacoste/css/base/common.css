@@ -4,7 +4,7 @@ html {
 	font-size:62.5%
 }
 body {
-	font-size: 1rem;
+	/* font-size: 1rem; */
 }
 
 /* Common */
@@ -24,6 +24,8 @@ body {
 }
 
 section .inner {
+	width: 1000px;
+	margin: 0 auto;
 	padding: 5rem 10rem;
 }
 .title-box {
