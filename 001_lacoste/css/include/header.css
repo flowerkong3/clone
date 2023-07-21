@@ -18,33 +18,33 @@
 }
 .header__h1 {
 	display:block;
+	width:15rem;
+	height:4rem;
 	background: url('../../images/h1_logo.svg')no-repeat top / cover;
-	width:150px;
-	height:40px;
 }
 
 .header__search-bar {
 	display: inline-block;
-	width: 700px;
-	height: 40px;
+	width: 70rem;
+	height: 4rem;
 	background-color:#eee ;
-	border-radius: 40px;
+	border-radius: 4rem;
 }
 .header__search-bar input {
-	padding-left: 40px;
+	padding-left: 4rem;
 	height: 100%;
 	width: 100%;
 	background: url('../images/ico_search.png')no-repeat 10px center / 20px;
-	font-size: 18px;
+	font-size: 1.8rem;
 }
 .header__util .flex {
 }
 .header__util li ~ li {
-	margin-left: 30px;
+	margin-left: 3rem;
 }
 .header__util .line {
 	position: relative;
-	margin-right: 20px;
+	margin-right: 2rem;
 }
 .header__util .line::after {
 	content: "";
@@ -103,7 +103,7 @@
 }
 .gnb__2depth {
 	position:absolute;
-	top:115px;
+	top:11.5rem;
 	left:0;
 	overflow:hidden;
 	opacity:0;
@@ -151,10 +151,38 @@
 .btn--close {
 	position:absolute;
 	left:90%;
-	top:15px;
-	font-size: 20px;
-	width: 30px;
-	height:30px;
+	top:1.5rem;
+	font-size: 2rem;
+	width: 3rem;
+	height:3rem;
 	background: url(../../images/btn_close.png)no-repeat top /cover;
 	cursor:pointer;
 }
+@media screen and (max-width:1000px){
+	.header__util a {
+		width:20px;
+		height:20px; 
+	}
+	.header__search-bar {
+		margin:0 2rem;
+	}
+
+	.gnb {
+    padding: 2rem 5rem;
+	}
+	.gnb__depth1 {
+		width:100%;
+	}
+	.gnb__2depth-menu {
+		gap: 8rem;
+	}
+	.gnb__2depth-thumb {
+    gap: 2rem;
+    padding: 3rem 2rem 0;
+	}
+	.gnb__2depth-thumb > div {
+    width: calc(100% /4);
+	}
+
+}
+

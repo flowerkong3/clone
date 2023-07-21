@@ -5,6 +5,7 @@
 	margin: 0 auto;
 	width: 1200px;
 }
+
 .footer__top {
 	margin: 6rem 0 0;
 	border-top: 1px solid #ccc;
@@ -123,23 +124,22 @@
 	color: #777;
 	font-size: 1.2rem;
 }
-.footer__bot {}
 .footer__bot .inner {
 	padding: 5rem 0;
 	display:flex;
 	justify-content: space-between;
 }
-.footer__bot-nav ul {
+.bot-nav ul {
 	display:flex;
 }
-.footer__bot-nav li ~ li {
+.bot-nav li ~ li {
 	margin:0 0 0 3rem;
 }
-.footer__bot-nav li {
+.bot-nav li {
 	position:relative;
 	font-size: 1.3rem;
 }
-.footer__bot-nav li::before {
+.bot-nav li::before {
 	content: "";
 	position: absolute;
 	top: 0;
@@ -148,10 +148,10 @@
 	height: 11px;
 	background: #ccc;
 }
-.footer__bot-nav li:last-child::before {
+.bot-nav li:last-child::before {
 	display:none;
 }
-.footer__bot-nav a:hover {
+.bot-nav a:hover {
 	text-decoration: underline;
 }
 
@@ -239,4 +239,90 @@ body.active {
 }
 .dimmed.active {
 	display:block;
+}
+
+
+
+@media screen and (max-width:1000px) {
+	.footer .inner {
+		width:100%;
+		padding: 5rem;
+	}
+	.footer__top {
+		padding: 5rem 0 14rem;
+	}
+	.footer__top ul {
+		flex-wrap: wrap;
+	}
+	.footer__top li {
+		width:45%;
+	}
+	.footer__mid .inner {
+		width:100%;
+		flex-direction: column;
+		align-items: center;
+	}
+	.footer__mid .left {
+		width:50rem;
+	}
+	.footer__mid .store-search {
+		display:none;
+	}
+	.footer__mid .kakao {
+		text-align: center;
+	}
+	.footer__mid button {
+		margin:0 auto;
+	}
+	.footer__mid .kakao h3 {
+		padding: 0;
+    padding-top: 15%;
+		width:100%;
+    font-size: 3rem;
+    background: url(../../images/img_foooter_kakao.png)no-repeat top;
+	}
+	.footer__mid .kakao p {
+		padding:6rem 0 2rem;
+		font-size: 1.6rem;
+	}
+	.footer__mid .menu {
+		padding:0 0 0 4%;
+	}
+	.footer__mid .menu li:last-child{
+		display: none;
+	}
+	.footer__mid .dep2 li a {
+    font-size: 1.6rem;
+	}
+	.footer__mid-2 .inner {
+		flex-direction: column;
+	}
+	.footer__mid-2 .inner p {
+		width:100%;
+	}
+	.footer__bot .inner {
+		flex-direction: column;
+	}
+	.bot-nav {
+		margin: 0 0 3rem;
+	}
+}
+
+@media screen and (max-width:480px) {
+	.footer__mid nav {
+    width: 100%;
+	}
+	.footer__mid-2 .inner p {
+		padding:0;
+	}
+	.bot-nav ul {
+		flex-wrap: wrap;
+		gap: 20px;
+	}
+	.bot-nav li ~ li {
+		margin: 0;
+	}
+	.bot-nav li a {
+		font-size: 14px;
+	}
 }
