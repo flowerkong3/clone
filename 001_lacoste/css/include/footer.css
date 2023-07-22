@@ -166,56 +166,85 @@
 	text-decoration: underline;
 }
 
-/* lang pop up */
+/* lang pop up | 안아산텍 핍압 */
 .lang-popup {
 	z-index:1001;
 	position:fixed;
 	top:0;
 	right:0;
-	width:50rem;
+	/* width:50rem; */
 	height:100%;
 	background:#fff;
 	display: flex;
 	justify-content: center;
+	align-items: center;
 	width: 0;
 	overflow:hidden;
+	transition: all 0.5s;
 }
 
 .lang-popup__inner {
 	overflow-x: hidden;
 	overflow-y: scroll;
-	height: 200px;
+	height: 52rem;
 	width: 100%;
 	padding: 4rem;
+}
+.lang-popup .title-box {
+	position: absolute;
+	background: #fff;
+	width: 100%;
+	height: 12rem;
+	top: 0;
+	left: 0;
+}
+.lang-popup h2 {
+	font-size: 3rem;
+	position: absolute;
+	top: 5rem;
+	left: 4rem;
+}
+.lang-popup h3 {
+	padding: 3rem 0 1rem;
+	font-size: 2rem;
+	font-weight: bold;
 }
 .lang-popup-nav ul {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
-	justify-content: center;
+	justify-content: space-between;
 }
 .lang-popup-nav li {
-	width: 20rem;
+	width: 49%;
+	margin:1rem 0 0;
 }
 .lang-popup-nav li a {
 	display: flex;
-	margin: 3px;
-	padding: 1rem;
+	/* margin: 3px; */
+	padding: 1.5rem 1rem;
 	align-items: center;
 	font-size: 1.6rem;
 	border-radius: 6px;
 	border: 1px solid #ccc;
 }
+.lang-popup-nav li a:hover {
+	background: #eee;
+}
 .lang-popup-nav li a img {
-	width: 25px;
-	height: 25px;
+	max-width: 25px;
+	max-height: 25px;
 	padding: 0 1rem 0 0;
 }
-.lang-popup .btn--close {
-	right:0;
-	top:0;
-	width: 30px;
-	height:30px;
+.lang-popup .btn--close-pop {
+	position: absolute;
+	right: 5rem;
+	top: 5rem;
+	font-size: 2rem;
+	width: 3rem;
+	height: 3rem;
+	background: url(../../images/btn_close.png)no-repeat top /cover;
+	cursor: pointer;
 }
 
 .dimmed {
@@ -229,12 +258,12 @@
 	z-index: 1000;
 	opacity: 0.5;
 }
-/* lang pop func */
+/* lang pop show | 언어선택 클릭하면 팝업 나타남 */
 body.active {
 	overflow:hidden;
 }
 .lang-popup.active {
-	width:auto;
+	width:50rem;
 	overflow: auto;
 }
 .dimmed.active {
@@ -325,4 +354,19 @@ body.active {
 	.bot-nav li a {
 		font-size: 14px;
 	}
+	.lang-popup__inner {
+		height: 80rem;
+	}
+	.lang-popup-nav ul {
+		flex-direction: column;
+	}
+	.lang-popup-nav li {
+		margin: 2rem 0 0;
+		width:100%;
+	}
+	.lang-popup-nav li a {
+		font-size: 16px;
+		padding: 2rem 2rem;
+	}
+
 }

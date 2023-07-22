@@ -5,14 +5,14 @@ $(document).ready(function(){
 		e.preventDefault();
 	});
 
-	// 
+	// 메가메뉴
 	$(".depth1__item").on("click", function(){
 		$(this).toggleClass("active");
 		$(this).siblings().removeClass("active");
 		$(".visual").toggleClass("active");
 	});
 
-	// Store Menu hover show img
+	// Store Menu hover img show | 스토어메뉴 오버하면 메뉴 이미지 나타남
 		const $storeItem = $(".store-item a");
 		const $storeThumb= $(".store-thumb");
 		$storeItem.on("mouseover",function(){
@@ -31,7 +31,7 @@ $(document).ready(function(){
 
 });
 
-// Store Menu hover move img
+// Store Menu hover img mousemove | 스토어 메뉴 이미지 마우스무브
 window.onload = () => {
 	let x = 0, 
 			y = 0;
@@ -79,7 +79,33 @@ window.onload = () => {
 
 
 
+
+
+
 }
+
+// Lang Popup
+function langPop(){
+	let langPop = document.querySelector(".lang-popup");
+	let body = document.querySelector("body");
+	let dimmed = document.querySelector(".dimmed");
+	langPop.classList.toggle("active");
+	body.classList.add("active");
+	dimmed.classList.add("active");
+}
+function btnClosePop(){
+	let langPop = document.querySelector(".lang-popup");
+	let body = document.querySelector("body");
+	let dimmed = document.querySelector(".dimmed");
+	langPop.classList.remove("active");
+	body.classList.remove("active");
+	dimmed.classList.remove("active");
+}
+
+
+
+
+
 
 	// console.log(storeThumb)
 
