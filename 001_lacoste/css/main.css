@@ -148,7 +148,7 @@ Video Section
 	position: absolute;
 	top:0;
 	left:0;
-	width:100%;
+	width:auto;
 	height: auto;
 }
 .flag-group {
@@ -594,16 +594,17 @@ Section-5 Meet
 	}
 	.video-section video {
 		width: auto;
+		height:100%;
 	}
 	.video-section .moving-text {
-    width: 121%;
-    max-width:none;
-    top: -27rem;
-    right: -34.3%;
+    width: 177%;
+    max-width: none;
+    top: 55%;
+    right: -83%;
+    z-index: 10;
+    position: absolute;
 	}
-	.title {
-		/* font-size: 4rem; */
-	}
+
 	.store-section .title {
 		/* font-size: 5rem; */
 	}
@@ -626,6 +627,19 @@ Section-5 Meet
 	}
 	.meet-section .item::after {
 		width: 8px;
+	}
+	.section-3 .img > div {
+		width:50%;
+		overflow: hidden;
+	}
+	.section-3 .img__left img {
+		margin-left: -150px;
+	}
+	.section-3 .img__right img {
+		margin-left: -64px;
+	}
+	.section-3 .img img {
+		width:430px;
 	}
  
 }

@@ -311,7 +311,7 @@ body.active {
     background: url(../../images/img_foooter_kakao.png)no-repeat top;
 	}
 	.footer__mid .kakao p {
-		padding:6rem 0 2rem;
+		padding:6rem 4rem 2rem;
 		font-size: 1.6rem;
 	}
 	.footer__mid .menu {

@@ -84,6 +84,19 @@ window.onload = () => {
 
 }
 
+
+// btnScrollDown
+function btnScrollDown(){
+	const section2 = document.querySelector(".section-2");
+	const headerH = document.querySelector(".header").clientHeight;
+	window.scrollTo({
+		top:section2.offsetTop - headerH, 
+		left:0, 
+		behavior:'smooth'
+	});
+
+}
+
 // Lang Popup
 function langPop(){
 	let langPop = document.querySelector(".lang-popup");
