@@ -76,13 +76,40 @@ window.onload = () => {
 
 
 
+	
 
 
+	searchBarFunc();
+		//header search-bar
+	function searchBarFunc(){
+		let search = document.querySelector(".header__search-bar .search");
+		let searchBtnClose = document.querySelector(".header__search-bar .btn--close-search");
+		let searchMenu = document.querySelector(".header__search-bar-menu");
+		let body = document.querySelector("body");
 
+		search.addEventListener("click", () => {
+			body.classList.add("active");
+			search.classList.add("active");
+			searchBtnClose.classList.add("active");
+			searchMenu.classList.add("active");
+		});
 
+		searchBtnClose.addEventListener("click", () => {
+			body.classList.remove("active");
+			search.classList.remove("active");
+			searchBtnClose.classList.remove("active");
+			searchMenu.classList.remove("active");
+		});
+	};
 
 
 }
+
+
+
+
+
+
 
 
 // btnScrollDown

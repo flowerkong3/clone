@@ -31,6 +31,11 @@ input, button {
 	-webkit-border-radius:none;
 	-moz-border-radius:none;
 }
+input:focus {
+	outline: none;
+	-webkit-tap-highlight-color:transparent; /*모바일*/ 
+}
+
 button {
 	background:transparent;
 	cursor:pointer
