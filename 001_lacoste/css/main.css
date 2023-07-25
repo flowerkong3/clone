@@ -628,6 +628,7 @@ Section-5 Meet
     padding: 2rem 3rem 0;
 	}
 	.meet-section .ico-x {
+		margin: 0 3rem;
 		width:13px;
 		height:13px;
 		position: relative;
