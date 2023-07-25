@@ -3,7 +3,7 @@
 .footer {}
 .footer .inner {
 	margin: 0 auto;
-	width: 1200px;
+	width: 90%;
 }
 
 .footer__top {
@@ -17,7 +17,7 @@
 	gap: 3rem;
 	margin: 0 auto;
 	padding: 0 6rem;
-	height: 10rem;
+	height: 15rem;
 	/* width: 800px; */
 	text-align: center;
 }
@@ -26,7 +26,7 @@
 }
 .footer__top a {
 	display: block;
-	font-size: 1.6rem;
+	font-size: 2rem;
 	background: url(../../images/ico_footer_call_01.png)no-repeat top;
 	padding: 46px 0 0px 0;
 }
@@ -45,14 +45,14 @@
 .footer__mid .inner {
 	margin: 0 auto;
 	padding: 5rem 0;
-	width: 1100px;
+	width: 90%;
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-start;
 	gap: 10rem;
 }
 .footer__mid .left {
-	width:30rem
+	width:81rem
 }
 .footer__mid .kakao {}
 .footer__mid .kakao h3 {
@@ -67,10 +67,11 @@
 }
 .footer__mid .kakao p {
 	padding:1rem 0;
-	font-size:1.3rem;
+	font-size:2rem;
 }
 .footer__mid .store-search {
 	padding:5rem 0 0;
+	font-size: 2rem;
 }
 .footer__mid .store-search button {
 	margin: 2rem 0 0;
@@ -78,13 +79,13 @@
 	border:1px solid #ccc
 }
 .footer__mid button {
-	height: 4.5rem;
+	height: 6.5rem;
 }
 .footer__mid nav {
 	width:70rem;
 }
 .footer__mid nav h3 {
-	font-size: 1rem;
+	font-size: 1.6rem;
 }
 .footer__mid .menu {
 	display:flex;
@@ -99,7 +100,7 @@
 }
 .footer__mid .dep2 li a {
 	display:block;
-	font-size: 1.3rem;
+	font-size: 2rem;
 }
 .footer__mid .dep2 li a:hover {
 	text-decoration: underline;
@@ -107,6 +108,7 @@
 .footer__mid small {
 	padding: 2rem 0 0;
 	display: inline-block;
+	font-size: 1.4rem;
 }
 .footer__mid-2 {
 	background:#eee;
@@ -122,7 +124,7 @@
 	padding: 0 10rem 0 0;
 	width:50%;
 	color: #777;
-	font-size: 1.2rem;
+	font-size: 1.8rem;
 }
 .footer__bot .inner {
 	padding: 5rem 0;
@@ -132,12 +134,12 @@
 .bot-nav ul {
 	display:flex;
 }
-.bot-nav li ~ li {
-	margin:0 0 0 3rem;
-}
 .bot-nav li {
 	position:relative;
-	font-size: 1.3rem;
+	font-size: 1.6rem;
+}
+.bot-nav li ~ li {
+	margin:0 0 0 3rem;
 }
 .bot-nav li::before {
 	content: "";
@@ -159,11 +161,13 @@
 	display:flex;
 }
 .lang-select-box .lang__img {
-	width:20px;
-	height: 20px;
+	width:4rem;
+	height: 4rem;
 }
 .lang-select-box .lang__nation {
+	margin-left:1rem;
 	text-decoration: underline;
+	font-size: 1.6rem;
 }
 
 /* lang pop up | 안아산텍 핍압 */
@@ -186,7 +190,7 @@
 .lang-popup__inner {
 	overflow-x: hidden;
 	overflow-y: scroll;
-	height: 52rem;
+	height: 62rem;
 	width: 100%;
 	padding: 4rem;
 }
@@ -206,7 +210,7 @@
 }
 .lang-popup h3 {
 	padding: 3rem 0 1rem;
-	font-size: 2rem;
+	font-size: 3rem;
 	font-weight: bold;
 }
 .lang-popup-nav ul {
@@ -224,7 +228,7 @@
 	/* margin: 3px; */
 	padding: 1.5rem 1rem;
 	align-items: center;
-	font-size: 1.6rem;
+	font-size: 2rem;
 	border-radius: 6px;
 	border: 1px solid #ccc;
 }
@@ -263,7 +267,7 @@ body.active {
 	overflow:hidden;
 }
 .lang-popup.active {
-	width:50rem;
+	width:80rem;
 	overflow: auto;
 }
 .dimmed.active {
@@ -367,6 +371,9 @@ body.active {
 	.lang-popup-nav li a {
 		font-size: 16px;
 		padding: 2rem 2rem;
+	}
+	.lang-popup.active {
+    width: 42rem;
 	}
 
 }

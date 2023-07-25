@@ -12,17 +12,17 @@ Visual Section
 	overflow:hidden;
 	position:relative;
 	width: 100%;
-	height: 100vh;
-	font-size: 3.4rem;
+	height: 100%;
+	font-size: 9rem;
 	background: var(--color-key);
 }
 .visual__logo {
 	z-index: 1;
 	position: absolute;
-	top: 29%;
+	top: 17%;
 	left: 50%;
 	transform: translateX(-50%);
-	width:70px;
+	width:13rem;
 	height:auto;
 }
 .visual__scroll {
@@ -31,7 +31,7 @@ Visual Section
 	top: 89%;
 	left: 50%;
 	transform: translateX(-50%);
-	font-size: 10px;
+	font-size: 2rem;
 	color: #fff;
 	
 }
@@ -40,14 +40,14 @@ Visual Section
 	border: 1px solid #fff;
 	border-width: 0 0 1px 1px;
 	border: 0 0 1px 1px;
-	width: 20px;
-	height: 20px;
+	width: 6rem;
+	height: 6rem;
 	position: absolute;
-	top: 16px;
+	top: 110%;
 	left: 50%;
-	margin-left: -10px;
+	margin-left: -3rem;
 	transform: rotate(-45deg);
-	transition:all 0.5s
+	transition: all 0.5s;
 }
 .visual__scroll:hover::after {
 	top: 22px;
@@ -78,6 +78,7 @@ Visual Section
 	animation: rtlMove 1s forwards;
 }
 .visual__bn img {
+	display:block;
 	opacity: 0;
 	animation: rtlMove 1s forwards;
 }
@@ -109,7 +110,7 @@ Visual Section
 	font-weight: bold;
 }
 .depth1__item.active .gnb__2depth{
-	height: 400px;
+	height: auto;
 	opacity:1;
 }
 .visual.active::before {
@@ -127,6 +128,10 @@ Video Section
 	overflow:hidden;
 }
 .video-section .inner {
+	z-index:20;
+	position:relative;
+	width:100%;
+	background:#fff;
 	/* padding: 5rem 10rem; */
 }
 .video-section .title-box {
@@ -136,51 +141,38 @@ Video Section
 }
 .video-section .title {
 	padding: 5rem 0 0;
-	line-height: 1;
-	font-size: 5rem;
+	line-height: 1.2;
+	/* font-size: 5rem; */
 }
 .video-section .video {
-	position: relative;
+	/* position: relative; */
 	width: 100%;
-	height: 600px;
+	height: auto;
+	padding-top: 52%;
 }
 .video-section video {
 	position: absolute;
-	top:0;
+	top:25%;
 	left:0;
-	width:auto;
-	height: auto;
+	width:100%;
+	height: 100%;
 }
 .flag-group {
 	display:flex;
 	gap:1rem;
 }
 .flag-group li {
-	background: url(../images/flag_01.svg)no-repeat;
-	width: 4rem;
-	height: 3rem;
+	background: url(../images/flag-elegant-archivists.svg)no-repeat;
+	width: 12rem;
+	height: 9rem;
 }
-.flag-group li:nth-child(2) {
-	background-image:url(../images/flag_02.svg) ;
-} 
-.flag-group li:nth-child(3) {
-	background-image:url(../images/flag_03.svg) ;
-} 
-.flag-group li:nth-child(4) {
-	background-image:url(../images/flag_04.svg) ;
-} 
-.flag-group li:nth-child(5) {
-	background-image:url(../images/flag_05.svg) ;
-} 
-.flag-group li:nth-child(6) {
-	background-image:url(../images/flag_06.svg) ;
-} 
-.flag-group li:nth-child(7) {
-	background-image:url(../images/flag_07.svg) ;
-} 
-.flag-group li:nth-child(8) {
-	background-image:url(../images/flag_08.svg) ;
-} 
+.flag-group li:nth-child(2) {background-image:url(../images/flag-golf-trenders.svg);} 
+.flag-group li:nth-child(3) {background-image:url(../images/flag-lacosteiros.svg);} 
+.flag-group li:nth-child(4) {background-image:url(../images/flag-rap-devotee.svg);} 
+.flag-group li:nth-child(5) {background-image:url(../images/flag-roland-fnatics.svg);} 
+.flag-group li:nth-child(6) {background-image:url(../images/flag-seoul-kr.svg);} 
+.flag-group li:nth-child(7) {background-image:url(../images/flag-vintage-collectors.svg);} 
+.flag-group li:nth-child(8) {background-image:url(../images/flag-lacoste.svg);} 
 /* .video-section .moving-text {
 	z-index:1;
 	position:absolute;
@@ -196,17 +188,20 @@ Video Section
 
 /* https://codepen.io/Knovour/pen/boJNPN */
 .video-section .moving-text {
+	z-index: 20;
 	overflow-x: hidden;
 	position: relative;
-	width: 115vw;
-	max-width: 100%;
-	height: 6rem;
+	overflow-y: hidden;
+	/* width: 115vw; */
+	/* max-width: 100%; */
+	width: 100%;
+	height: 11rem;
 	transform: rotate(-90deg);
-	top: -45rem;
-	right: -48.3%;
+	top: -46vw;
+	right: -49%;
 	display: flex;
 	align-items: center;
-	font-size: 3rem;
+	font-size: 5rem;
 	background: #fff;
 	color: var(--color-key);
 }
@@ -238,6 +233,9 @@ Section-3
 .section-3 .img {
 	display: flex;
 }
+.section-3 .img > div {
+	width:50%;
+}
 .section-3 .img img {
 	width:100%;
 	display: block;
@@ -266,7 +264,7 @@ Section-4 | store
 	margin: 0 0 4rem;
 	color: var(--white);
 	border-bottom: 1px solid var(--white);
-	font-size: 6rem;
+	/* font-size: 6rem; */
 	
 }
 .store-section .title .ico {
@@ -280,11 +278,11 @@ Section-4 | store
 }
 .store-menu a {
 	display: inline-block;
-	padding: 4rem 0 0;
+	padding: 9rem 0 0;
 	z-index:10;
 	position:relative;
 	color: var(--white);
-	font-size: 5rem;
+	font-size: 8rem;
 }
 .store-menu a::before {
 	content:"";
@@ -302,7 +300,7 @@ Section-4 | store
 .store-menu small {
 	display: block;
 	padding: 0 0 1rem;
-	font-size: 1.4rem;
+	font-size: 2rem;
 }
 .store-item {
 	position: relative;
@@ -385,7 +383,7 @@ Section-5 Meet
 */
 .meet-section {}
 .meet-section .title {
-	padding:0 0 3rem;
+	padding:0 0 6rem;
 	color: var(--color-key);
 }
 .meet-section .inner {
@@ -397,8 +395,8 @@ Section-5 Meet
 	display:flex;
 	justify-content: center;
 	align-items: center;
-	padding: 3rem 0;
-	font-size:1.6rem;
+	padding: 5rem 0;
+	font-size:3.6rem;
 	color: var(--color-key);
 	text-transform: uppercase;
 	border-bottom: 1px solid var(--color-key);
@@ -446,7 +444,7 @@ Section-5 Meet
 }
 
 .meet-section .img {
-	width: 9rem;
+	width: 13rem;
 }
 /* .meet-section .item-1 {
 	border-top: 1px solid var(--color-key);
@@ -474,7 +472,7 @@ Section-5 Meet
 	padding:0 0 5px;
 }
 .meet-section .ico-x {
-	margin:0 4rem;
+	margin:0 7rem;
 	width: 17px;
 	height: 17px;
 	background: url(../images/ico_x.png)no-repeat center /contain;
@@ -491,7 +489,7 @@ Section-5 Meet
 	right: 0%;
 	display: flex;
 	align-items: center;
-	font-size: 6rem;
+	font-size: 10rem;
 	background: #fff;
 	color: var(--color-key);
 }
@@ -523,12 +521,13 @@ Section-5 Meet
 
 
 /* 반응형 */
-@media screen and (max-width:1000px) {
+@media screen and (max-width:1600px) {
 	section .inner {
 		width:100%;
 		box-sizing: border-box;
 	}
 	.visual {
+		height:100vh;
 		padding-top: 0;
 	}
 	.visual .container {
@@ -548,7 +547,7 @@ Section-5 Meet
 		display:none;
 	}
 	.video-section .title {
-		padding-top:0;
+		/* padding-top:0; */
 	}
 	.video-section .video {
     height: 380px;
@@ -583,7 +582,7 @@ Section-5 Meet
 	} 
 }
 
-@media screen and (max-width:480px) {
+@media screen and (max-width:768px) {
 	.visual__text {
 		padding:14% 9rem 2rem 5rem;
 		font-size: 7vw;
@@ -597,12 +596,21 @@ Section-5 Meet
 		height:100%;
 	}
 	.video-section .moving-text {
-    width: 177%;
+		width: 177%;
     max-width: none;
-    top: 55%;
-    right: -83%;
-    z-index: 10;
+    top: 50%;
+    right: -85%;
     position: absolute;
+		font-size: 3rem;
+	}
+	.title {
+		font-size: 5rem;
+	}
+	.store-section {
+		overflow: hidden;
+	}
+	.store-menu a {
+		font-size: 5rem;
 	}
 
 	.store-section .title {
@@ -642,4 +650,17 @@ Section-5 Meet
 		width:430px;
 	}
  
+}
+
+@media screen and (max-width:480px) {
+	.visual__scroll::after {
+    width: 4rem;
+    height: 4rem;
+    top: 80%;
+    left: 50%;
+    margin-left: -2rem;
+	}
+	.video-section .moving-text {
+		height: 5rem;
+	}
 }
