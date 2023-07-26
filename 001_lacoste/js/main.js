@@ -14,10 +14,12 @@ $(document).ready(function(){
 			$(".visual").addClass("dim");
 			$("body").css("overflow","hidden");
 			$(".btn--close-menu").addClass("active");
+			$(".header__inner").addClass("long");
 		}else {
 			$(".visual").removeClass("dim");
 			$("body").css("overflow","auto");
 			$(".btn--close-menu").removeClass("active");
+			$(".header__inner").removeClass("long");
 		}
 		// $(".visual").toggleClass("active");
 	});
@@ -28,6 +30,7 @@ $(document).ready(function(){
 		$(".depth1__item").removeClass("active");
 		$(".visual").removeClass("dim");
 		$("body").css("overflow","auto");
+		$(".header__inner").removeClass("long");
 	})
 
 	// Store Menu hover img show | 스토어메뉴 오버하면 메뉴 이미지 나타남
