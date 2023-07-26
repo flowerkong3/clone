@@ -276,7 +276,7 @@ body.active {
 
 
 
-@media screen and (max-width:1000px) {
+@media screen and (max-width:1600px) {
 	.footer .inner {
 		width:100%;
 		padding: 5rem;
@@ -339,6 +339,13 @@ body.active {
 	.bot-nav {
 		margin: 0 0 3rem;
 	}
+}
+
+@media screen and (max-width:1280px) {
+	.lang-popup__inner {
+		margin-top: 5%;
+	}
+
 }
 
 @media screen and (max-width:480px) {

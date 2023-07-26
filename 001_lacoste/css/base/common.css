@@ -69,7 +69,7 @@ section .inner {
 		padding:5rem
 	}
 }
-@media screen and (max-width:768px) {
+@media screen and (max-width:1280px) {
 	html {
 		font-size:8px;
 	}
