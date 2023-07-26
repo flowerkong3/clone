@@ -9,8 +9,26 @@ $(document).ready(function(){
 	$(".depth1__item").on("click", function(){
 		$(this).toggleClass("active");
 		$(this).siblings().removeClass("active");
-		$(".visual").toggleClass("active");
+		
+		if($(this).hasClass("active")){
+			$(".visual").addClass("dim");
+			$("body").css("overflow","hidden");
+			$(".btn--close-menu").addClass("active");
+		}else {
+			$(".visual").removeClass("dim");
+			$("body").css("overflow","auto");
+			$(".btn--close-menu").removeClass("active");
+		}
+		// $(".visual").toggleClass("active");
 	});
+
+	// 메가메뉴 닫기 버튼
+	$(".btn--close-menu").on("click",function(){
+		$(this).toggleClass("active");
+		$(".depth1__item").removeClass("active");
+		$(".visual").removeClass("dim");
+		$("body").css("overflow","auto");
+	})
 
 	// Store Menu hover img show | 스토어메뉴 오버하면 메뉴 이미지 나타남
 		const $storeItem = $(".store-item a");
@@ -29,7 +47,22 @@ $(document).ready(function(){
 	// 	$(this).parents().siblings(".store-thumb").addClass("active");
 	// });
 
+
+	// Mobile Menu
+	$(".hamburger").on("click",function(){
+		$(this).toggleClass("active");
+		$(".header").addClass("--mo");
+		if($(this).hasClass("active")){
+			$(".header").addClass("--mo");
+		}else {
+			$(".header").removeClass("--mo");
+		}
+		
+	})
+
 });
+
+
 
 // Store Menu hover img mousemove | 스토어 메뉴 이미지 마우스무브
 window.onload = () => {

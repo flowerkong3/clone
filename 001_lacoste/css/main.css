@@ -1,5 +1,4 @@
  /* Layout */
- /* * {outline: 1px solid #ccc;} */
 
 
 /* 
@@ -12,7 +11,7 @@ Visual Section
 	overflow:hidden;
 	position:relative;
 	width: 100%;
-	height: 100%;
+	height: 100vh;
 	font-size: 9rem;
 	background: var(--color-key);
 }
@@ -49,11 +48,9 @@ Visual Section
 	transform: rotate(-45deg);
 	transition: all 0.5s;
 }
-.visual__scroll:hover::after {
-	top: 22px;
-}
-
+.visual__scroll:hover::after {top: 22px;}
 .visual::before {
+	z-index:1;
 	display: none;
 	content: "";
 	position:absolute;
@@ -64,9 +61,11 @@ Visual Section
 	background: #000;
 	opacity:0.5;
 }
-.visual .container > div {
-	width: 50%;
+
+.visual.dim::before {
+	display: block;
 }
+.visual__content > div {width: 50%;}
 .visual__text {
 	padding: 0 10rem;
 	box-sizing: border-box;
@@ -77,45 +76,31 @@ Visual Section
 	opacity: 0;
 	animation: rtlMove 1s forwards;
 }
+.visual__bn {height: 100vh;}
 .visual__bn img {
 	display:block;
 	opacity: 0;
+	object-fit: cover;
+	width:100%;
+	height:100%;
 	animation: rtlMove 1s forwards;
 }
-@keyframes rtlMove {
-	0% {padding-left: 30px; opacity: 0;}
-	100% {padding-left: 0; opacity:1;}
-}
-.visual__text .text-01 {
-	animation-delay: 1s;
-}
-.visual__text .text-02 {
-	animation-delay: 1.3s;
-}
-.visual__text .text-03 {
-	animation-delay: 1.5s;
-}
+
+.visual__text .text-01 {animation-delay: 1s;}
+.visual__text .text-02 {animation-delay: 1.3s;}
+.visual__text .text-03 {animation-delay: 1.5s;}
 
 .visual__bn img {
 	width: 100%;
 	animation-delay: 0.3s;
 }
 
+@keyframes rtlMove {
+	0% {padding-left: 30px; opacity: 0;}
+	100% {padding-left: 0; opacity:1;}
+}
 
-/* 기능 */
-.depth1__item.active {
-}
-.depth1__item.active > a {
-	color: #222;
-	font-weight: bold;
-}
-.depth1__item.active .gnb__2depth{
-	height: auto;
-	opacity:1;
-}
-.visual.active::before {
-	display: block;
-}
+
 
 
 /* 
@@ -224,6 +209,8 @@ Section-3
 */
 .section-3 {
 	position: relative;
+	overflow:hidden;
+	height: 100vh;
 	background: var(--color-key);
 }
 .section-3 .title-box {
@@ -232,13 +219,17 @@ Section-3
 }
 .section-3 .img {
 	display: flex;
+	height: 100vh;
 }
 .section-3 .img > div {
 	width:50%;
+	height: 100%;
 }
 .section-3 .img img {
-	width:100%;
 	display: block;
+	object-fit: cover;
+	width:100%;
+	height: 100%;
 }
 .section-3 .btn-group {
 	position: absolute;
@@ -273,9 +264,7 @@ Section-4 | store
 	height: 8rem;
 	background: url(../images/img_store_tit.png)no-repeat left/contain;
 }
-.store-menu {}
-.store-menu li {
-}
+
 .store-menu a {
 	display: inline-block;
 	padding: 9rem 0 0;
@@ -530,22 +519,14 @@ Section-5 Meet
 		height:100vh;
 		padding-top: 0;
 	}
-	.visual .container {
-		height:100%;
-	}
-	.visual .container > div {
-		width: 100%;
-	}
+	.visual__content {height:100%;}
+	.visual__content > div {width: 100%;}
 	.visual__text {
 		padding: 14% 17rem 2rem 5rem;
     font-size: 5vw;
 	}
-	.visual__text {
-		line-height: 1.3;
-	}
-	.visual__bn {
-		display:none;
-	}
+	.visual__text {line-height: 1.3;}
+	.visual__bn {display:none;}
 	.video-section .title {
 		/* padding-top:0; */
 	}
@@ -574,12 +555,8 @@ Section-5 Meet
 		order:2
 	}
 
-	.store-thumb {
-		width:50rem
-	}
-	.moving-text {
-		font-size: 5rem;
-	} 
+	.store-thumb {width:50rem}
+	.moving-text {font-size: 5rem;} 
 }
 
 @media screen and (max-width:768px) {
@@ -603,12 +580,8 @@ Section-5 Meet
     position: absolute;
 		font-size: 3rem;
 	}
-	.title {
-		font-size: 5rem;
-	}
-	.store-section {
-		overflow: hidden;
-	}
+	.title {font-size: 5rem;}
+	.store-section {overflow: hidden;}
 	.store-menu a {
 		font-size: 5rem;
 	}
@@ -620,9 +593,7 @@ Section-5 Meet
 		font-size: 1.6rem;
 		align-items: baseline;
 	}
-	.meet-section .img {
-    width: 4rem;
-	}
+	.meet-section .img {width: 4rem;}
 	.meet-section .left span, 
 	.meet-section .right span {
     padding: 2rem 3rem 0;
@@ -634,14 +605,12 @@ Section-5 Meet
 		position: relative;
     top: 4rem;
 	}
-	.meet-section .item::after {
-		width: 8px;
-	}
+	.meet-section .item::after {width: 8px;}
 	.section-3 .img > div {
 		width:50%;
-		overflow: hidden;
+		/* overflow: hidden; */
 	}
-	.section-3 .img__left img {
+	/* .section-3 .img__left img {
 		margin-left: -150px;
 	}
 	.section-3 .img__right img {
@@ -649,7 +618,7 @@ Section-5 Meet
 	}
 	.section-3 .img img {
 		width:430px;
-	}
+	} */
  
 }
 
@@ -661,7 +630,5 @@ Section-5 Meet
     left: 50%;
     margin-left: -2rem;
 	}
-	.video-section .moving-text {
-		height: 5rem;
-	}
+	.video-section .moving-text {height: 5rem;}
 }
