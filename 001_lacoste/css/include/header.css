@@ -267,7 +267,7 @@
 }
 
 
-@media screen and (max-width:1600px) {
+@media screen and (max-width:1240px) {
 
 	/* Mobile Menu */
 	.hamburger {display: block;}
@@ -384,7 +384,7 @@
 		display: block;
 	}
 }
-@media screen and (max-width:1280px){
+@media screen and (max-width:1240px){
 	.hamburger {
 		width:20px;
 	}

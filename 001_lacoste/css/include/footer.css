@@ -26,7 +26,7 @@
 }
 .footer__top a {
 	display: block;
-	font-size: 2rem;
+	font-size: 1.6rem;
 	background: url(../../images/ico_footer_call_01.png)no-repeat top;
 	padding: 46px 0 0px 0;
 }
@@ -54,7 +54,6 @@
 .footer__mid .left {
 	width:81rem
 }
-.footer__mid .kakao {}
 .footer__mid .kakao h3 {
 	padding: 0 0 0 6rem;
 	width: 41px;
@@ -67,15 +66,15 @@
 }
 .footer__mid .kakao p {
 	padding:1rem 0;
-	font-size:2rem;
+	font-size:1.6rem;
 }
 .footer__mid .store-search {
 	padding:5rem 0 0;
-	font-size: 2rem;
+	font-size: 1.6rem;
 }
 .footer__mid .store-search button {
 	margin: 2rem 0 0;
-	width:100%;
+	width:90%;
 	border:1px solid #ccc
 }
 .footer__mid button {
@@ -100,7 +99,7 @@
 }
 .footer__mid .dep2 li a {
 	display:block;
-	font-size: 2rem;
+	font-size: 1.6rem;
 }
 .footer__mid .dep2 li a:hover {
 	text-decoration: underline;
@@ -124,7 +123,7 @@
 	padding: 0 10rem 0 0;
 	width:50%;
 	color: #777;
-	font-size: 1.8rem;
+	font-size: 1.6rem;
 }
 .footer__bot .inner {
 	padding: 5rem 0;
@@ -276,7 +275,7 @@ body.active {
 
 
 
-@media screen and (max-width:1600px) {
+@media screen and (max-width:1239px) {
 	.footer .inner {
 		width:100%;
 		padding: 5rem;
@@ -341,7 +340,7 @@ body.active {
 	}
 }
 
-@media screen and (max-width:1280px) {
+@media screen and (max-width:1240px) {
 	.lang-popup__inner {
 		margin-top: 5%;
 	}

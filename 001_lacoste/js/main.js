@@ -141,7 +141,42 @@ window.onload = () => {
 
 }
 
-
+// Video section
+window.onload = () => {
+	const sectionAll = document.querySelector(".section");
+	const section2 = document.querySelector(".section-2");
+	const section3 = document.querySelector(".section-3");
+	const section3Title = document.querySelector(".section-3 .title");
+	const flagAll = document.querySelectorAll(".section-2 .flag-group li");
+	const section2Title = document.querySelector(".section-2 .title");
+	// let fade = document.querySelectorAll(".fade");
+	let scroll = 0;
+	window.addEventListener("scroll",() => {
+		scroll = window.scrollY;
+		if(scroll > section2.offsetTop /2){
+			flagAll.forEach((flag) => {
+				flag.classList.add("fadeIn")
+			});
+			section2Title.classList.add("fadeIn")
+			// fadeAll.forEach((fade1) => {
+			// 	fade1.classList.add("fadeIn")
+			// })
+		}else {
+			flagAll.forEach((flags) => {
+				flags.classList.remove("fadeIn")
+			});
+			section2Title.classList.remove("fadeIn")
+			// fadeAll.forEach((fade2) => {
+			// 	fade2.classList.remove("fadeIn")
+			// })
+		};
+		if(scroll > section3.offsetTop / 1.5){
+			section3Title.classList.add("fadeIn")
+		}else {
+			section3Title.classList.remove("fadeIn")
+		};
+	});
+}
 
 
 
