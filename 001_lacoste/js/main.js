@@ -61,7 +61,24 @@ $(document).ready(function(){
 			$(".header").removeClass("--mo");
 		}
 		
-	})
+	});
+
+	// 검색하기
+	const $search = $(".header__search-bar .search");
+	const $searchBtnClose = $(".header__search-bar .btn--close-search");
+	const $searchMenu = $(".header__search-bar-menu");
+	$search.on("click",function(){
+		$("body").addClass("active");
+		$search.addClass("active");
+		$searchBtnClose.addClass("active");
+		$searchMenu.addClass("active");
+	});
+	$searchBtnClose.on("click",function(){
+		$("body").removeClass("active");
+		$search.removeClass("active");
+		$searchBtnClose.removeClass("active");
+		$searchMenu.removeClass("active");
+	});
 
 });
 
@@ -110,36 +127,37 @@ window.onload = () => {
 
 	});
 
+}
 
+// 검색하기
+// window.onload = () => {
+// 	// searchBarFunc();
+// 	//header search-bar
+// 	// function searchBarFunc(){
+		
+// 	// };
 
 	
+// 	console.log(body)
+	
+// 	let search = document.querySelector(".header__search-bar .search");
+// 	let searchBtnClose = document.querySelector(".header__search-bar .btn--close-search");
+// 	let searchMenu = document.querySelector(".header__search-bar-menu");
+// 	let body = document.querySelector("body");
+// 	search.addEventListener("click", () => {
+// 		body.classList.add("active");
+// 		search.classList.add("active");
+// 		searchBtnClose.classList.add("active");
+// 		searchMenu.classList.add("active");
+// 	});
 
-
-	searchBarFunc();
-		//header search-bar
-	function searchBarFunc(){
-		let search = document.querySelector(".header__search-bar .search");
-		let searchBtnClose = document.querySelector(".header__search-bar .btn--close-search");
-		let searchMenu = document.querySelector(".header__search-bar-menu");
-		let body = document.querySelector("body");
-
-		search.addEventListener("click", () => {
-			body.classList.add("active");
-			search.classList.add("active");
-			searchBtnClose.classList.add("active");
-			searchMenu.classList.add("active");
-		});
-
-		searchBtnClose.addEventListener("click", () => {
-			body.classList.remove("active");
-			search.classList.remove("active");
-			searchBtnClose.classList.remove("active");
-			searchMenu.classList.remove("active");
-		});
-	};
-
-
-}
+// 	searchBtnClose.addEventListener("click", () => {
+// 		body.classList.remove("active");
+// 		search.classList.remove("active");
+// 		searchBtnClose.classList.remove("active");
+// 		searchMenu.classList.remove("active");
+// 	});
+// }
 
 // Video section
 window.onload = () => {
