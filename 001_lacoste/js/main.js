@@ -33,7 +33,7 @@ $(document).ready(function(){
 		$(".header__inner").removeClass("long");
 	})
 
-	// Store Menu hover img show | 스토어메뉴 오버하면 메뉴 이미지 나타남
+	// 스토어메뉴 호버하면 이미지 나타남
 		const $storeItem = $(".store-item a");
 		const $storeThumb= $(".store-thumb");
 		$storeItem.on("mouseover",function(){
@@ -84,7 +84,7 @@ $(document).ready(function(){
 
 
 
-// Store Menu hover img mousemove | 스토어 메뉴 이미지 마우스무브
+// 스토어 메뉴 이미지 마우스무브
 window.onload = () => {
 	let x = 0, 
 			y = 0;

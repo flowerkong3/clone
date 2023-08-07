@@ -79,7 +79,7 @@
 	background: #fff;
 	transition: all 0.3s;
 	font-size: 3rem;
-	padding: 10rem;
+	padding: 2% 5%;
 }
 .header__search-bar-menu.active {
 	opacity:1;
