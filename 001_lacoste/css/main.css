@@ -317,8 +317,22 @@ Section-4 | store
 	color: var(--white);
 	border-bottom: 1px solid var(--white);
 	/* font-size: 6rem; */
-	
 }
+.store-section .title.fadeIn {
+	animation: toRight2 1s forwards;
+}
+.store-section .store-menu.fadeIn {
+	animation: toLeft2 1s forwards;
+}
+@keyframes toRight2 {
+	0% {transform: translateX(-120px);}
+	100% {transform: translateX(0px);}
+}
+@keyframes toLeft2 {
+	0% {transform: translateX(120px);}
+	100% {transform: translateX(0px);}
+}
+
 .store-section .title .ico {
 	margin: 0 0 5rem;
 	width: 9rem;
@@ -567,6 +581,31 @@ Section-5 Meet
   from { transform: translateX(0); }
   to { transform: translateX(-50%); }
 }
+
+
+
+.meet-section .title.fadeIn {
+	animation: toBottom 1s forwards;
+}
+.meet-section .left.fadeIn {
+	animation: toRight 1s forwards;
+}
+.meet-section .right.fadeIn {
+	animation: toLeft 1s forwards;
+}
+@keyframes toBottom {
+	0% {transform: translateY(-119px); opacity: 0;}
+	100% {transform: translateY(0); opacity:1;}
+}
+@keyframes toRight {
+	0% {transform: translateX(-119px); opacity: 0;}
+	100% {transform: translateX(0); opacity:1;}
+}
+@keyframes toLeft {
+	0% {transform: translateX(119px); opacity: 0;}
+	100% {transform: translateX(0); opacity:1;}
+}
+
 
 
 

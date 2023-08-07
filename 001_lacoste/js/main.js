@@ -146,9 +146,16 @@ window.onload = () => {
 	const sectionAll = document.querySelector(".section");
 	const section2 = document.querySelector(".section-2");
 	const section3 = document.querySelector(".section-3");
-	const section3Title = document.querySelector(".section-3 .title");
-	const flagAll = document.querySelectorAll(".section-2 .flag-group li");
+	const section4 = document.querySelector(".section-4");
+	const section5 = document.querySelector(".section-5");
 	const section2Title = document.querySelector(".section-2 .title");
+	const section3Title = document.querySelector(".section-3 .title");
+	const section4Title = document.querySelector(".section-4 .title");
+	const section4Menu = document.querySelector(".section-4 .store-menu");
+	const section5Title = document.querySelector(".section-5 .title");
+	const section5LeftAll = document.querySelectorAll(".section-5 .left");
+	const section5RightAll = document.querySelectorAll(".section-5 .right");
+	const flagAll = document.querySelectorAll(".section-2 .flag-group li");
 	// let fade = document.querySelectorAll(".fade");
 	let scroll = 0;
 	window.addEventListener("scroll",() => {
@@ -174,6 +181,33 @@ window.onload = () => {
 			section3Title.classList.add("fadeIn")
 		}else {
 			section3Title.classList.remove("fadeIn")
+		};
+
+		if(scroll > section4.offsetTop / 1.2){
+			section4Title.classList.add("fadeIn");
+			section4Menu.classList.add("fadeIn");
+
+		}else {
+			section4Title.classList.remove("fadeIn")
+			section4Menu.classList.remove("fadeIn");
+		};
+
+		if(scroll > section5.offsetTop / 1.2){
+			section5Title.classList.add("fadeIn");
+			section5LeftAll.forEach((left) => {
+				left.classList.add("fadeIn")
+			});
+			section5RightAll.forEach((right) => {
+				right.classList.add("fadeIn")
+			});
+		}else {
+			section5Title.classList.remove("fadeIn");
+			section5LeftAll.forEach((lefts) => {
+				lefts.classList.remove("fadeIn")
+			});
+			section5RightAll.forEach((rights) => {
+				rights.classList.remove("fadeIn")
+			});
 		};
 	});
 }
