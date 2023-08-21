@@ -395,6 +395,38 @@
 	background-image: url(../img/ico_facebook.PNG);
 }
 
+
+
+.btn-share2 {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width:6rem;
+	height:6rem;
+	border: none;
+	border-radius: 100%;
+	background: var(--color-dark);
+}
+
+.btn-share2::before {
+	content: "";
+	width: 2.7rem;
+	height: 2.8rem;
+	background: url(../img/ico_share_kakao.png)no-repeat;
+}
+.btn-share2.twitter::before {
+	background-image: url(../img/ico_share_kakao.PNG);
+}
+.btn-share2.facebook::before {
+	background-image: url(../img/ico_share_facebook.PNG);
+}
+.btn-share2.twitter::before {
+	background-image: url(../img/ico_share_twitter.PNG);
+}
+.btn-share2.copy::before {
+	background-image: url(../img/ico_share_copy.PNG);
+}
+
 /* 공통스타일 */
 .txt.center {
 	text-align: center;

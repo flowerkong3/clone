@@ -121,6 +121,9 @@ const tabType1 = function() {
 	})
 };
 
+
+
+
 // Home ani
 const homeAni = function() {
 	let invite = document.querySelector(".section-invite");
@@ -135,6 +138,7 @@ const homeAni = function() {
 	let inviteM3 = document.querySelector(".invite1 .m3");
 
 	let scrollLtr = document.querySelector(".scroll-ltr");
+	let scrollLtrBar = document.querySelector(".bar");
 	let documentHeight = 0;
 
 	let scroll = 0;
@@ -142,8 +146,6 @@ const homeAni = function() {
 		scroll = window.scrollY;
 		documentHeight = document.body.scrollHeight - window.innerHeight;
 		per = Math.round((scroll / documentHeight) * 100);
-
-		
 
 		// console.log(scroll);
 		// console.log(invite1.clientHeight + invite2.clientHeight);
@@ -168,13 +170,25 @@ const homeAni = function() {
 		}else {
 			invite2.classList.remove("is-active");
 		};
-		// Text Move Ltr 
-		if(scroll > invite1.clientHeight + 1500) {
-			scrollLtr.style.transform = `translateX(${per * 1.1}%)`;
+		
+		// Ltr Text & Bar
+		if(scroll > invite1.clientHeight + 500) {
+			scrollLtr.style.transform = `translateX(${per}%)`;
+			// scrollLtrBar.style.width = (per * 2)  + "%";
+			// scrollLtrBar.classList.add("is-show");
 		}else {
 			scrollLtr.style.transform = `translateX(0)`;
+			// scrollLtrBar.style.width = 0;
+			// scrollLtrBar.classList.remove("is-show");
 		}
-		if(scroll > invite1.clientHeight + invite2.clientHeight) {
+		if(scroll > invite1.clientHeight + 700) {
+			scrollLtrBar.style.width = (per * 2)  + "%";
+			scrollLtrBar.classList.add("is-show");
+		}else {
+			scrollLtrBar.style.width = 0;
+			scrollLtrBar.classList.remove("is-show");
+		}
+		if(scroll > invite1.clientHeight + invite2.clientHeight + 1000) {
 			invite3.classList.add("is-active");
 		}else {
 			invite3.classList.remove("is-active");
@@ -186,3 +200,17 @@ const homeAni = function() {
 
 tabType1();
 homeAni();
+
+
+
+// 링크복사
+function copyUrl(){
+	var copyText = document.createElement("textarea");
+	document.body.appendChild(copyText);
+	copyText.value = 'https://inflearn.com/conf/infcon-2023';
+	copyText.select();
+	document.execCommand('copy');
+	document.body.removeChild(copyText);
+	// alert(copyText.value + '\n이메일 주소 복사 완료!');
+	alert(copyText.value + ' 링크 복사 완료!');
+};
