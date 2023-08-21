@@ -171,8 +171,8 @@ const homeAni = function() {
 			invite2.classList.remove("is-active");
 		};
 		
-		// Ltr Text & Bar
-		if(scroll > invite1.clientHeight + 500) {
+		// Ltr Text
+		if(scroll > invite1.clientHeight * 1.3) {
 			scrollLtr.style.transform = `translateX(${per}%)`;
 			// scrollLtrBar.style.width = (per * 2)  + "%";
 			// scrollLtrBar.classList.add("is-show");
@@ -181,7 +181,8 @@ const homeAni = function() {
 			// scrollLtrBar.style.width = 0;
 			// scrollLtrBar.classList.remove("is-show");
 		}
-		if(scroll > invite1.clientHeight + 700) {
+		// Ltr Bar
+		if(scroll > invite1.clientHeight * 1.5) {
 			scrollLtrBar.style.width = (per * 2)  + "%";
 			scrollLtrBar.classList.add("is-show");
 		}else {

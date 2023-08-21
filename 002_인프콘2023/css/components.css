@@ -279,13 +279,13 @@
 	background: #e9ecef;
 	border-radius: .7rem;
 	padding: 1rem 2rem;
-	font-size: 1.6rem;
+	font-size: 16px;
 }
 
 .btn-share::before {
 	content: "";
-	width: 2rem;
-	height: 2rem;
+	width: 20px;
+	height: 20px;
 	background: url(../img/ico_share.png)no-repeat;
 	margin-right: .5rem;
 }
@@ -301,8 +301,8 @@
 
 .btn-link::after {
 	content: "";
-	width: 1.5rem;
-	height: 1.3rem;
+	width: 15px;
+	height: 13px;
 	background: url(../img/bu_arrow_right.png)no-repeat;
 	margin-left: .5rem;
 }
@@ -314,7 +314,7 @@
 	padding: 1.5rem 4rem;
 	border-radius: 5rem;
 	border: 1px solid var(--color-dark);
-	font-size: 2rem;
+	font-size: 20px;
 }
 .btn-link2:hover {
 	background: var(--color-dark);
@@ -330,13 +330,13 @@
 	border-radius: 5rem;
 	background: var(--color-graye9);
 	color: var(--color-gray);
-	font-size: 2rem;
+	font-size: 20px;
 	font-weight: 600;
 }
 .btn-end::before {
 	content: "";
-	width: 2rem;
-	height: 2.7rem;
+	width: 20px;
+	height: 27px;
 	background: url(../img/ico_alarm.PNG)no-repeat;
 	margin-right: .5rem;
 }
@@ -348,13 +348,13 @@
 	padding: 1rem 3rem;
 	border: 1px solid var(--color-dark);
 	border-radius: 5rem;
-	font-size: 2rem;
+	font-size: 20px;
 }
 
 .btn-loadmap::before {
 	content: "";
-	width: 1.5rem;
-	height: 1.3rem;
+	width: 15px;
+	height: 13px;
 	background: url(../img/bu_arrow_right.png)no-repeat;
 	margin-right: .5rem;
 }
@@ -370,15 +370,15 @@
 	padding: 1.5rem 3rem;
 	border: none;
 	border-radius: 5rem;
-	font-size: 2rem;
+	font-size: 20px;
 	background: var(--color-white);
 	font-weight: 500;
 }
 
 .btn-sns::before {
 	content: "";
-	width: 2.7rem;
-	height: 2.4rem;
+	width: 27px;
+	height: 24px;
 	background: url(../img/bu_arrow_right.png)no-repeat left;
 	margin-right: .5rem;
 }
@@ -401,8 +401,8 @@
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
-	width:6rem;
-	height:6rem;
+	width:60px;
+	height:60px;
 	border: none;
 	border-radius: 100%;
 	background: var(--color-dark);
@@ -410,8 +410,8 @@
 
 .btn-share2::before {
 	content: "";
-	width: 2.7rem;
-	height: 2.8rem;
+	width: 27px;
+	height: 28px;
 	background: url(../img/ico_share_kakao.png)no-repeat;
 }
 .btn-share2.twitter::before {
@@ -451,4 +451,87 @@
 }
 .align.center {
 	justify-content: center;
+}
+
+
+/* 리스트 */
+.list-type2 {
+	display:flex;
+	gap: 2.4rem;
+}
+.list-type2 .block {
+	width: 300px;
+	border-radius: 2rem;
+	line-height: 1.3;
+	text-align: left;
+	background: #fff;
+	box-shadow: 0 2px 12px 4px rgba(0, 0, 0, 0.1);
+	transition: all 0.3s;
+}
+.list-type2 .block a {
+	padding: 2rem;
+	display: block;
+}
+.list-type2 .block__title {
+	height: 25rem;
+	font-size:2.4rem;
+}
+
+.list-type2 .block__title span {
+	display: block;
+	padding: 0 0 1rem;
+	color: var(--color-blue);
+	font-size: 1.4rem;
+}
+.list-type2 .block__thumb .name small {
+	display:block;
+}
+.list-type2 .block__thumb .img {
+	position:relative;
+	width:50px;
+	height:50px;
+	overflow:hidden;
+	border-radius: 100%;
+	transition: all 0.3s;
+}
+.list-type2 .block__thumb .img::before {
+	display: none;
+	content: "";
+	position:absolute;
+	width:100%;
+	height:100%;
+	background: url(../img/bu_arrow_right.png)no-repeat center;
+	background-color: var(--color-white);
+}
+.list-type2 .block__thumb .img img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 100%;
+}
+.list-type2 .block:hover {
+	background: var(--color-dark);
+}
+.list-type2 .block:hover .block__title,
+.list-type2 .block:hover .block__thumb
+{
+	color: var(--color-white);
+}
+.list-type2 .block:hover .img {
+	background: var(--color-white);
+}
+.list-type2 .block:hover .img::before {
+	display:block;
+}
+
+/* 반응형 */
+@media (max-width:480px) {
+	.list-type2 .block__title {
+		height: 200px;
+    font-size: 3.4rem;
+	}
+	.list-type2 .block__thumb .name {
+		font-size: 2.4rem;
+	}
 }
