@@ -189,10 +189,14 @@ const homeAni = function() {
 			scrollLtrBar.style.width = 0;
 			scrollLtrBar.classList.remove("is-show");
 		}
+
+		// trailer Video
 		if(scroll > invite1.clientHeight + invite2.clientHeight + 1000) {
 			invite3.classList.add("is-active");
+			invite2.style.display = "none";
 		}else {
 			invite3.classList.remove("is-active");
+			invite2.style.display = "block"
 		}
 	})
 }

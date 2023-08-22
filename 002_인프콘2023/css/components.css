@@ -534,4 +534,7 @@
 	.list-type2 .block__thumb .name {
 		font-size: 2.4rem;
 	}
+	.btn-end {
+    padding: 2.5rem 5rem;
+	}
 }

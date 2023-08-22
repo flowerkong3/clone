@@ -556,6 +556,10 @@ table td {
 	flex-direction: column;
 	background: none;
 }
+.home .section-visual .title .mo {
+	margin: 0 auto;
+	width:90%;
+}
 .home .main-video {
 	position: fixed;
 	top: 125px;
@@ -679,7 +683,7 @@ table td {
 	height:20px;
 	background: linear-gradient(270deg, #66deff 0%, hsl(0, 0%, 100%) 100%);
 	border-radius: 5rem;
-	transition: all 0.3s;
+	/* transition: all 0.3s; */
 }
 .scroll-ltr .bar.is-show {
 	opacity:1;
@@ -868,6 +872,9 @@ table td {
 	height: 100%;
 }
 
+.mo {
+	display: none;
+}
 
 /* 반응형 */
 @media (max-width:480px) {
@@ -881,11 +888,11 @@ table td {
 		font-size: 5rem;
 	}
 	.home .section-visual .title {
-    padding: 28% 10px 0;
+    padding: 31% 10px 0;
 	}
 	.home .section-visual .title p {
-    padding: 4% 0 7rem;
-    line-height: 1.5;
+		padding: 10% 0 7rem;
+    line-height: 1.3;
 	}
 	.section-invite .title p {
 		font-size: 2.4rem;
@@ -920,7 +927,7 @@ table td {
 		gap: 7rem;
 	}
 	.section-share {
-    height: 974px;
+    height: 1015px;
 	}
 	.section-invite .message {
     width: min(300px, calc(100vw - 32px));
@@ -947,12 +954,26 @@ table td {
 		top:67%;
 		right:-6%;
 	}
+	.section-invite .title {
+		margin-top: -22%;
+	}
+
+	.scroll-ltr-wrap {
+    margin: 7rem auto 0;
+	}
 	.scroll-ltr .bar {
     min-width: 100px;
 	}
 
 	.section-sns {
     padding-top: 2rem;
+	}
+
+	.pc {
+		display: none;
+	}
+	.mo {
+		display: block;
 	}
 	
 }

@@ -75,6 +75,8 @@
 .gnb {
 	position:relative;
 }
+
+
 .gnb ul {
 	display:flex; 
 	/* gap: 30px; */
@@ -161,7 +163,7 @@
 }
 .footer__nav ul {
 	display:flex;
-	gap: 20px;
+	gap: 2rem;
 }
 .footer__nav ul li {}
 .footer__nav ul li a {
@@ -179,4 +181,125 @@
 }
 .footer__info p {
 	padding: 10px 0 0;
+}
+
+@media (max-width:480px) {
+
+	.gnb {
+		display: none;
+		position: absolute;
+		background: var(--color-white);
+		top: 0;
+		left: 0;
+		width: 100%;
+		top: 101%;
+	}
+	.gnb.is-show {
+		display:block;
+	}
+	.gnb ul {
+		padding: 0 2rem 2.5rem;
+		flex-direction: column;
+	}
+	.gnb ul > li > a {
+		font-size: 18px;
+	}
+	.gnb ul > li > a:hover {
+		color: var(--color-blue);
+	}
+	.gnb .dropdown {
+    display: none;
+    padding: 5px;
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    flex-direction: column;
+    margin-left: 0;
+    gap: 0;
+    border: none;
+    border-radius: 10px;
+    animation: dropdownAni 0s ease;
+	}
+	.gnb .dropdown::after {
+		display: none;
+	}
+	.gnb .dropdown a {
+		font-size: 18px;
+	}
+
+	.gnb .select:hover .dropdown {
+		display:none;
+		/* opacity:1; */
+	}
+	.gnb .dropdown li:hover {
+		background: #fff;
+	}
+
+	.header .gnb .select > a.is-active::after {
+    transform: rotate(-45deg);
+		vertical-align: -1px;
+	}
+	.header .gnb .dropdown.is-show {
+		display:block;
+	}
+
+	/* 모바일 메뉴 */
+	h1 {
+		display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+	}
+	.hamburger-menu {
+		position: relative;
+		width:30px;
+		height:30px;
+		background: #fff;
+		border:none;
+	}
+	.hamburger-menu:hover {
+		background: #eee;
+	}
+	.hamburger-menu span {
+		position: absolute;
+		left:50%;
+		top: 0;
+		transform: translateX(-50%);
+		width:50%;
+		height:1px;
+		background: #777;
+	}
+	.hamburger-menu span:nth-child(1) {
+		top: 30%;
+	}
+	.hamburger-menu span:nth-child(2) {
+		top: 50%;
+	}
+	.hamburger-menu span:nth-child(3) {
+		top: 70%;
+	}
+
+	.hamburger-menu.is-active span:nth-child(1) {
+		display: none;
+	}
+	.hamburger-menu.is-active span:nth-child(2) {
+		transform: translateX(-50%) rotate(45deg);
+		top: 50%;
+		
+	}
+	.hamburger-menu.is-active span:nth-child(3) {
+		top: 52%;
+		transform: translateX(-50%) rotate(-45deg);
+	}
+
+
+	.footer {
+    padding: 3rem 0 7rem;
+	}
+
+	.footer__info {
+		text-align: center;
+		line-height: 1.5;
+	}
 }

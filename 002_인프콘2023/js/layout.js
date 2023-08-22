@@ -1,3 +1,4 @@
+// Header
 const scrollHeader = function() {
 	let scroll = 0;
 	let header = document.querySelector(".header");
@@ -18,8 +19,33 @@ const scrollHeader = function() {
 		}else {
 			mainVideo.classList.remove("is-active");
 		};
-		console.log(scroll)
+		// console.log(scroll)
 	})
 }
 
-scrollHeader()
+// Gnb Select Menu
+const gnbSelectMenu = function() {
+	let gnbSelect = document.querySelector(".gnb .select a");
+	let gnbDropDown = document.querySelector(".gnb .dropdown");
+	console.log(gnbSelect)
+
+	gnbSelect.addEventListener("click", (e) => {
+		e.preventDefault();
+		gnbSelect.classList.toggle("is-active");
+		gnbDropDown.classList.toggle("is-show")
+	})
+}
+
+const hamburgerMenu = function() {
+	let hamburger = document.querySelector(".hamburger-menu");
+	let gnb = document.querySelector(".gnb");
+
+	hamburger.addEventListener("click", () => {
+		gnb.classList.toggle("is-show");
+		hamburger.classList.toggle("is-active");
+	})
+}
+ 
+scrollHeader();
+gnbSelectMenu();
+hamburgerMenu();
