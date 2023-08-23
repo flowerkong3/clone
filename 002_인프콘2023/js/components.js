@@ -14,7 +14,25 @@
 		});
 	};
 
-	// Session | Login Popup
+	//index | 트레일러 모달
+	const trailerModal = function() {
+	
+		$(".trailer-btn").on("click",function(){
+			$(".trailer-modal").addClass("is-show");
+			$(".home .header").css("display","none");
+			$(".home .top").css("display","none");
+			$("body").css("overflow","hidden");
+			$(".youtube-url").attr('src', "https://www.youtube.com/embed/wm8bpujQjKM?autoplay=1");
+		})
+		$(".trailer-modal .btn-close").on("click",function(){
+			$(".trailer-modal").removeClass("is-show");
+			$(".home .header").css("display","block");
+			$(".home .top").css("display","block");
+			$("body").css("overflow","auto");
+		})
+	}
+
+	// Session Page | Login Popup
 	const loginPop = function() {
 		$(".btn-loginPop").on("click",function(){
 			$(".pop-login").css("display","block")
@@ -29,7 +47,7 @@
 		})
 	};
 
-	// Session | 필터
+	// Session Page | 필터
 			// 버튼 show hide
 	const filterTab = function() {
 		$(".tab-type1 li").on("click",function(){
@@ -93,6 +111,7 @@
 		modalClose();
 		filterChk();
 		filterReset();
+		trailerModal();
 		// homeAni2();
 	})
 
