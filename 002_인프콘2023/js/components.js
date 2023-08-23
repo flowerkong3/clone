@@ -29,6 +29,7 @@
 			$(".home .header").css("display","block");
 			$(".home .top").css("display","block");
 			$("body").css("overflow","auto");
+			$(".youtube-url").attr('src', "https://www.youtube.com/embed/wm8bpujQjKM");
 		})
 	}
 
