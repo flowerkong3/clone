@@ -239,3 +239,6 @@ function copyUrl(){
 	// alert(copyText.value + '\n이메일 주소 복사 완료!');
 	alert(copyText.value + ' 링크 복사 완료!');
 };
+
+// 스크롤다운 fadeDown 애니메이션
+AOS.init();
