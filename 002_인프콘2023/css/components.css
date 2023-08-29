@@ -526,7 +526,7 @@
 }
 
 /* 반응형 */
-@media (max-width:480px) {
+@media (max-width:768) {
 	.list-type2 .block__title {
 		height: 200px;
     font-size: 3.4rem;

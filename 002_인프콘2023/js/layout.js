@@ -1,3 +1,34 @@
+// 제이쿼리
+(function (win, $) {
+	'use strict';
+
+	// footer | 웹페이지 최하단시 스크롤이벤트 푸터 fixed
+	// const footerFixed = function() {
+	// 	var $winHeight = $(window).height();
+	// 	var $docHeight = $(document).height();
+
+	// 	$(window).scroll(function(){
+	// 		if($(window).scrollTop() + $winHeight >= $docHeight) {
+	// 			$(".footer").addClass("is-fixed");
+	// 		}else {
+	// 			$(".footer").removeClass("is-fixed");
+	// 		}
+	// 	})
+
+	// };
+
+
+
+	$(function () {
+		footerFixed();
+	})
+
+
+})(window, window.jQuery);
+
+
+
+
 // Header
 const scrollHeader = function() {
 	let scroll = 0;
