@@ -892,6 +892,9 @@ table td {
     line-height: 1.4;
     padding: 2rem 0 5rem;
 }
+.section-loadmap .loadmap {
+	border-radius: 20px;
+}
 
 .section-sns {
 	padding: 0 2rem;

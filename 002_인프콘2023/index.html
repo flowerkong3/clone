@@ -424,18 +424,23 @@
 										대중교통 이용을 권장드려요
 									</p>
 								</div>
-								<button class="btn-loadmap">길찾기</button>
+								<a href="https://map.naver.com/p/entry/place/41836336?placePath=%2Fhome" class="btn-loadmap">길찾기</a>
 							</div>
 							<div class="loadmap" id="map" style="width:100%;height:400px;">
-								<img src="img/@img_home3.PNG" alt="">
 							</div>
 
 							<script>
 								var mapOptions = {
-										center: new naver.maps.LatLng(37.3595704, 127.105399),
-										zoom: 10
+										center: new naver.maps.LatLng(37.5130712, 127.0585203),
+										zoom: 17
 								};
 								var map = new naver.maps.Map('map', mapOptions); // id와 option
+
+								// 마커의 경위도는 127.0585203,37.5130712 입니다.
+								var marker = new naver.maps.Marker({
+									position: new naver.maps.LatLng(37.5130712, 127.0585203),
+									map: map
+								});
 							</script>
 	
 						</div>
