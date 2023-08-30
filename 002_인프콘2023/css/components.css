@@ -20,6 +20,7 @@
 .tab-type1 li a {
 	display: block;
 	padding: 10px 20px;
+	font-size: 16px;
 }
 
 .tab-type1 li:hover {
@@ -527,6 +528,9 @@
 
 /* 반응형 */
 @media (max-width:768) {
+	html {
+		font-size: 8px;
+	}
 	.list-type2 .block__title {
 		height: 200px;
     font-size: 3.4rem;
@@ -536,5 +540,11 @@
 	}
 	.btn-end {
     padding: 2.5rem 5rem;
+	}
+}
+
+@media (max-width:480) {
+	html {
+		font-size: 7px;
 	}
 }

@@ -20,13 +20,20 @@
 				<li class="infcon"><a href="">INFCON</a></li>
 			</ul>
 			<ul class="right">
-				<li><a href="">지난 인프콘 보기</a></li>
+				<li><a href="#">지난 인프콘 보기</a></li>
 			</ul>
 		</div>
 	</div>
 	<header class="header">
 		<div class="inner">
-			<h1><a href="index.html">INFCON 2023</a></h1>
+			<h1>
+				<a href="">INFCON 2023</a>
+				<button class="btn hamburger-menu mo" aria-label="모바일 GNB 메뉴">
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+			</h1>
 			<nav class="gnb">
 				<ul>
 					<li><a href="session.html">발표/프로그램</a></li>
@@ -36,16 +43,17 @@
 							<!-- <button><span class="hide">하위메뉴</span></button> -->
 						</a>
 						<ul class="dep2 dropdown">
-							<li><a href="">이벤트</a></li>
-							<li><a href="">스토리</a></li>
-							<li><a href="">이것만은 지켜요</a></li>
+							<li><a href="event.html">이벤트</a></li>
+							<li><a href="event.html">스토리</a></li>
+							<li><a href="event.html">이것만은 지켜요</a></li>
 						</ul>
 					</li>
 					<li><a href="faq.html">FAQ</a></li>
 					<li><a href="mypage.html">MY</a></li>
+					<li class="mo gnb-btn"><a href="" class="btn-apply end">신청마감</a></li>
 				</ul>
 			</nav>
-			<a href="" class="btn-apply end">신청마감</a>
+			<a href="" class="btn-apply end pc">신청마감</a>
 		</div>
 	</header>
 	<main>
@@ -66,7 +74,7 @@
 						<button class="btn-filter"><span>필터</span></button>
 					</nav>
 					<div class="tab-type1-cont content">
-						<div class="tab-cont is-show">
+						<div class="tab-cont">
 							<h2 class="hide">시간,장소,발표자,세션명 표</h2>
 							<section class="table">
 								<div class="thead">
@@ -77,13 +85,16 @@
 										<li class="last">세션명</li>
 									</ul>
 								</div>
-								<div class="tbody-block">
+								<div class="tbody-block start">
 									<div class="tmiddle">
-										<ul class="list">
+										<ul class="list first">
 											<li><strong>10:00 - 10:30</strong></li>
 											<li class="location">전체</li>
 											<li>이형주, 이동욱</li>
-											<li class="last">인프랩의 미래 - 교육을 넘어 라이프타임 커리어 플랫폼으로</li>
+											<li class="last">
+												인프랩의 미래 - 교육을 넘어 라이프타임 커리어 플랫폼으로
+												<small class="w1000show">10:00 - 10:30 이형주, 이동욱</small>
+											</li>
 										</ul>
 									</div>
 									<div class="tbody">
@@ -103,7 +114,7 @@
 															src="https://cdn.inflearn.com/public/files/pages/4c101735-6ce0-4736-87e7-edb39aa7ec52/%E1%84%8B%E1%85%B5%E1%84%89%E1%85%A5%E1%86%AB%E1%84%92%E1%85%A7%E1%86%B8.jpeg"
 															alt="">
 														<div>
-															이선협 <br>
+															이선협 <br class="br--hide">
 															<small>주식회사 코발트</small>
 														</div>
 													</li>
@@ -123,7 +134,7 @@
 															src="https://cdn.inflearn.com/public/files/pages/4c101735-6ce0-4736-87e7-edb39aa7ec52/%E1%84%8B%E1%85%B5%E1%84%89%E1%85%A5%E1%86%AB%E1%84%92%E1%85%A7%E1%86%B8.jpeg"
 															alt="">
 														<div>
-															이선협 <br>
+															이선협 <br class="br--hide">
 															<small>주식회사 코발트</small>
 														</div>
 													</li>
@@ -143,7 +154,7 @@
 															src="https://cdn.inflearn.com/public/files/pages/4c101735-6ce0-4736-87e7-edb39aa7ec52/%E1%84%8B%E1%85%B5%E1%84%89%E1%85%A5%E1%86%AB%E1%84%92%E1%85%A7%E1%86%B8.jpeg"
 															alt="">
 														<div>
-															이선협 <br>
+															이선협 <br class="br--hide">
 															<small>주식회사 코발트</small>
 														</div>
 													</li>
@@ -163,7 +174,7 @@
 															src="https://cdn.inflearn.com/public/files/pages/4c101735-6ce0-4736-87e7-edb39aa7ec52/%E1%84%8B%E1%85%B5%E1%84%89%E1%85%A5%E1%86%AB%E1%84%92%E1%85%A7%E1%86%B8.jpeg"
 															alt="">
 														<div>
-															이선협 <br>
+															이선협 <br class="br--hide">
 															<small>주식회사 코발트</small>
 														</div>
 													</li>
@@ -183,7 +194,7 @@
 															src="https://cdn.inflearn.com/public/files/pages/4c101735-6ce0-4736-87e7-edb39aa7ec52/%E1%84%8B%E1%85%B5%E1%84%89%E1%85%A5%E1%86%AB%E1%84%92%E1%85%A7%E1%86%B8.jpeg"
 															alt="">
 														<div>
-															이선협 <br>
+															이선협 <br class="br--hide">
 															<small>주식회사 코발트</small>
 														</div>
 													</li>
@@ -200,7 +211,10 @@
 										<ul class="list">
 											<li><strong>11:20 - 11:40</strong></li>
 											<li class="location">전체</li>
-											<li>이형주, 이동욱</li>
+											<li>
+												Lunch Time
+												<small class="w1000show">11:20 - 11:40</small>
+											</li>
 											<li class="last">인프랩의 미래 - 교육을 넘어 라이프타임 커리어 플랫폼으로</li>
 										</ul>
 									</div>
@@ -221,7 +235,7 @@
 															src="https://cdn.inflearn.com/public/files/pages/4c101735-6ce0-4736-87e7-edb39aa7ec52/%E1%84%8B%E1%85%B5%E1%84%89%E1%85%A5%E1%86%AB%E1%84%92%E1%85%A7%E1%86%B8.jpeg"
 															alt="">
 														<div>
-															이선협 <br>
+															이선협 <br class="br--hide">
 															<small>주식회사 코발트</small>
 														</div>
 													</li>
@@ -241,7 +255,7 @@
 															src="https://cdn.inflearn.com/public/files/pages/4c101735-6ce0-4736-87e7-edb39aa7ec52/%E1%84%8B%E1%85%B5%E1%84%89%E1%85%A5%E1%86%AB%E1%84%92%E1%85%A7%E1%86%B8.jpeg"
 															alt="">
 														<div>
-															이선협 <br>
+															이선협 <br class="br--hide">
 															<small>주식회사 코발트</small>
 														</div>
 													</li>
@@ -261,7 +275,7 @@
 															src="https://cdn.inflearn.com/public/files/pages/4c101735-6ce0-4736-87e7-edb39aa7ec52/%E1%84%8B%E1%85%B5%E1%84%89%E1%85%A5%E1%86%AB%E1%84%92%E1%85%A7%E1%86%B8.jpeg"
 															alt="">
 														<div>
-															이선협 <br>
+															이선협 <br class="br--hide">
 															<small>주식회사 코발트</small>
 														</div>
 													</li>
@@ -281,7 +295,7 @@
 															src="https://cdn.inflearn.com/public/files/pages/4c101735-6ce0-4736-87e7-edb39aa7ec52/%E1%84%8B%E1%85%B5%E1%84%89%E1%85%A5%E1%86%AB%E1%84%92%E1%85%A7%E1%86%B8.jpeg"
 															alt="">
 														<div>
-															이선협 <br>
+															이선협 <br class="br--hide">
 															<small>주식회사 코발트</small>
 														</div>
 													</li>
@@ -301,7 +315,7 @@
 															src="https://cdn.inflearn.com/public/files/pages/4c101735-6ce0-4736-87e7-edb39aa7ec52/%E1%84%8B%E1%85%B5%E1%84%89%E1%85%A5%E1%86%AB%E1%84%92%E1%85%A7%E1%86%B8.jpeg"
 															alt="">
 														<div>
-															이선협 <br>
+															이선협 <br class="br--hide">
 															<small>주식회사 코발트</small>
 														</div>
 													</li>
@@ -318,7 +332,10 @@
 										<ul class="list">
 											<li><strong>12:20 - 12:40</strong></li>
 											<li class="location">전체</li>
-											<li>Break Time</li>
+											<li>
+												Break Time
+												<small class="w1000show">11:20 - 11:40</small>
+											</li>
 											<li class="last"></li>
 										</ul>
 									</div>
@@ -339,7 +356,7 @@
 															src="https://cdn.inflearn.com/public/files/pages/4c101735-6ce0-4736-87e7-edb39aa7ec52/%E1%84%8B%E1%85%B5%E1%84%89%E1%85%A5%E1%86%AB%E1%84%92%E1%85%A7%E1%86%B8.jpeg"
 															alt="">
 														<div>
-															이선협 <br>
+															이선협 <br class="br--hide">
 															<small>주식회사 코발트</small>
 														</div>
 													</li>
@@ -359,7 +376,7 @@
 															src="https://cdn.inflearn.com/public/files/pages/4c101735-6ce0-4736-87e7-edb39aa7ec52/%E1%84%8B%E1%85%B5%E1%84%89%E1%85%A5%E1%86%AB%E1%84%92%E1%85%A7%E1%86%B8.jpeg"
 															alt="">
 														<div>
-															이선협 <br>
+															이선협 <br class="br--hide">
 															<small>주식회사 코발트</small>
 														</div>
 													</li>
@@ -379,7 +396,7 @@
 															src="https://cdn.inflearn.com/public/files/pages/4c101735-6ce0-4736-87e7-edb39aa7ec52/%E1%84%8B%E1%85%B5%E1%84%89%E1%85%A5%E1%86%AB%E1%84%92%E1%85%A7%E1%86%B8.jpeg"
 															alt="">
 														<div>
-															이선협 <br>
+															이선협 <br class="br--hide">
 															<small>주식회사 코발트</small>
 														</div>
 													</li>
@@ -399,7 +416,7 @@
 															src="https://cdn.inflearn.com/public/files/pages/4c101735-6ce0-4736-87e7-edb39aa7ec52/%E1%84%8B%E1%85%B5%E1%84%89%E1%85%A5%E1%86%AB%E1%84%92%E1%85%A7%E1%86%B8.jpeg"
 															alt="">
 														<div>
-															이선협 <br>
+															이선협 <br class="br--hide">
 															<small>주식회사 코발트</small>
 														</div>
 													</li>
@@ -419,7 +436,7 @@
 															src="https://cdn.inflearn.com/public/files/pages/4c101735-6ce0-4736-87e7-edb39aa7ec52/%E1%84%8B%E1%85%B5%E1%84%89%E1%85%A5%E1%86%AB%E1%84%92%E1%85%A7%E1%86%B8.jpeg"
 															alt="">
 														<div>
-															이선협 <br>
+															이선협 <br class="br--hide">
 															<small>주식회사 코발트</small>
 														</div>
 													</li>
@@ -436,7 +453,10 @@
 										<ul class="list">
 											<li><strong>16:20 - 16:40</strong></li>
 											<li class="location">전체</li>
-											<li>Break Time</li>
+											<li>
+												Break Time
+												<small class="w1000show">11:20 - 11:40</small>
+											</li>
 											<li class="last"></li>
 										</ul>
 									</div>
@@ -457,7 +477,7 @@
 															src="https://cdn.inflearn.com/public/files/pages/4c101735-6ce0-4736-87e7-edb39aa7ec52/%E1%84%8B%E1%85%B5%E1%84%89%E1%85%A5%E1%86%AB%E1%84%92%E1%85%A7%E1%86%B8.jpeg"
 															alt="">
 														<div>
-															이선협 <br>
+															이선협 <br class="br--hide">
 															<small>주식회사 코발트</small>
 														</div>
 													</li>
@@ -477,7 +497,7 @@
 															src="https://cdn.inflearn.com/public/files/pages/4c101735-6ce0-4736-87e7-edb39aa7ec52/%E1%84%8B%E1%85%B5%E1%84%89%E1%85%A5%E1%86%AB%E1%84%92%E1%85%A7%E1%86%B8.jpeg"
 															alt="">
 														<div>
-															이선협 <br>
+															이선협 <br class="br--hide">
 															<small>주식회사 코발트</small>
 														</div>
 													</li>
@@ -497,7 +517,7 @@
 															src="https://cdn.inflearn.com/public/files/pages/4c101735-6ce0-4736-87e7-edb39aa7ec52/%E1%84%8B%E1%85%B5%E1%84%89%E1%85%A5%E1%86%AB%E1%84%92%E1%85%A7%E1%86%B8.jpeg"
 															alt="">
 														<div>
-															이선협 <br>
+															이선협 <br class="br--hide">
 															<small>주식회사 코발트</small>
 														</div>
 													</li>
@@ -517,7 +537,7 @@
 															src="https://cdn.inflearn.com/public/files/pages/4c101735-6ce0-4736-87e7-edb39aa7ec52/%E1%84%8B%E1%85%B5%E1%84%89%E1%85%A5%E1%86%AB%E1%84%92%E1%85%A7%E1%86%B8.jpeg"
 															alt="">
 														<div>
-															이선협 <br>
+															이선협 <br class="br--hide">
 															<small>주식회사 코발트</small>
 														</div>
 													</li>
@@ -537,7 +557,7 @@
 															src="https://cdn.inflearn.com/public/files/pages/4c101735-6ce0-4736-87e7-edb39aa7ec52/%E1%84%8B%E1%85%B5%E1%84%89%E1%85%A5%E1%86%AB%E1%84%92%E1%85%A7%E1%86%B8.jpeg"
 															alt="">
 														<div>
-															이선협 <br>
+															이선협 <br class="br--hide">
 															<small>주식회사 코발트</small>
 														</div>
 													</li>
@@ -561,7 +581,7 @@
 								</div>
 							</section>
 						</div>
-						<div class="tab-cont">
+						<div class="tab-cont program is-show">
 							<h2 class="hide">
 								구분
 								시간
@@ -597,7 +617,7 @@
 															src="https://cdn.inflearn.com/public/files/pages/4c101735-6ce0-4736-87e7-edb39aa7ec52/%E1%84%8B%E1%85%B5%E1%84%89%E1%85%A5%E1%86%AB%E1%84%92%E1%85%A7%E1%86%B8.jpeg"
 															alt="">
 														<div>
-															이선협 <br>
+															이선협 <br class="br--hide">
 															<small>주식회사 코발트</small>
 														</div>
 													</li>
@@ -615,11 +635,11 @@
 															src="https://cdn.inflearn.com/public/files/pages/4c101735-6ce0-4736-87e7-edb39aa7ec52/%E1%84%8B%E1%85%B5%E1%84%89%E1%85%A5%E1%86%AB%E1%84%92%E1%85%A7%E1%86%B8.jpeg"
 															alt="">
 														<div>
-															이선협 <br>
+															이선협 <br class="br--hide">
 															<small>주식회사 코발트</small>
 														</div>
 													</li>
-											
+
 												</ul>
 												<!-- <button class="btn-add btn-loginPop">
 													<span>추가</span>
@@ -631,7 +651,7 @@
 								<div class="tbody-block">
 									<div class="tbody">
 										<h3 class="big">
-											기업<br>
+											기업<br class="br--hide">
 											<small>프로그램</small>
 										</h3>
 										<ul class="row">
@@ -647,11 +667,11 @@
 															src="https://cdn.inflearn.com/public/files/pages/4c101735-6ce0-4736-87e7-edb39aa7ec52/%E1%84%8B%E1%85%B5%E1%84%89%E1%85%A5%E1%86%AB%E1%84%92%E1%85%A7%E1%86%B8.jpeg"
 															alt="">
 														<div>
-															이선협 <br>
+															이선협 <br class="br--hide">
 															<small>주식회사 코발트</small>
 														</div>
 													</li>
-											
+
 												</ul>
 												<!-- <button class="btn-add btn-loginPop">
 													<span>추가</span>
@@ -669,11 +689,11 @@
 															src="https://cdn.inflearn.com/public/files/pages/4c101735-6ce0-4736-87e7-edb39aa7ec52/%E1%84%8B%E1%85%B5%E1%84%89%E1%85%A5%E1%86%AB%E1%84%92%E1%85%A7%E1%86%B8.jpeg"
 															alt="">
 														<div>
-															이선협 <br>
+															이선협 <br class="br--hide">
 															<small>주식회사 코발트</small>
 														</div>
 													</li>
-											
+
 												</ul>
 												<!-- <button class="btn-add btn-loginPop">
 													<span>추가</span>
@@ -700,7 +720,7 @@
 															src="https://cdn.inflearn.com/public/files/pages/4c101735-6ce0-4736-87e7-edb39aa7ec52/%E1%84%8B%E1%85%B5%E1%84%89%E1%85%A5%E1%86%AB%E1%84%92%E1%85%A7%E1%86%B8.jpeg"
 															alt="">
 														<div>
-															이선협 <br>
+															이선협 <br class="br--hide">
 															<small>주식회사 코발트</small>
 														</div>
 													</li>
@@ -773,7 +793,7 @@
 				<button class="btn">적용</button>
 			</div>
 		</div>
-		
+
 
 		<!-- dimmed -->
 		<div class="dimmed"></div>
