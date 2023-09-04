@@ -71,13 +71,14 @@ body {
 
 /* 서브페이지 */
 .section-visual {
-	background: url(https://cdn.inflearn.com/infcon/infcon-2023/main-faq-hero-pc.png)no-repeat top/cover;
+	padding:10rem 0 0;
 	width: 100%;
 	height: 380px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	text-align: center;
+	background: url(https://cdn.inflearn.com/infcon/infcon-2023/main-faq-hero-pc.png)no-repeat top/cover;
 }
 
 .section-visual .title {
@@ -1061,6 +1062,7 @@ table td {
 	img {
 		width:100%;
 	}
+	/* Index */
 	.home h2 {
 		font-size: 5rem;
 	}
@@ -1070,6 +1072,20 @@ table td {
 	.home .section-visual .title p {
 		padding: 10% 0 7rem;
     line-height: 1.3;
+	}
+
+	/* Sub */
+	.contents-session .tab-type1 {
+    width: 110%;
+    margin: 0 -5%;
+    padding: 40px 20px;
+	}
+	.section-visual .title h2 {
+		font-size: 4rem;
+	}
+	
+	.section-visual .title p {
+		font-size: 2.4rem;
 	}
 	.section-invite .title p {
 		font-size: 2.4rem;

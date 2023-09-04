@@ -104,24 +104,21 @@
 	flex-wrap: wrap;
 	gap: 3rem;
 }
-
 .list-type1 li {
 	overflow: hidden;
 	margin: 0 0 4rem;
 	/* flex: 1; */
+	position: relative;
+	top: 0;
 	width: calc(100% / 3 - 2rem);
 	border-radius: 1.5rem;
 	background: #fff;
 	box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
-	transition: all 0.3s;
 }
 
 .list-type1 li:hover {
-	transform: translateY(-10px);
-}
-
-.list-type1 li:hover figure::before {
-	display: block;
+	top: -10px;
+	transition: all 0.7s;
 }
 
 .list-type1 a {
@@ -130,10 +127,11 @@
 
 .list-type1 figure {
 	position: relative;
+	overflow:hidden;
 }
 
 .list-type1 figure::before {
-	display: none;
+	opacity:0;
 	content: "";
 	position: absolute;
 	top: 0;
@@ -141,13 +139,28 @@
 	width: 100%;
 	height: 100%;
 	background: rgba(0, 0, 0, 0.3);
+	transition: all 0.3s;
 }
-
+.list-type1 figure::after {
+	opacity:0;
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 40px;
+	height: 40px;
+	background: url(../img/bu_arrow_right3.svg)no-repeat center / cover;
+	transition: all 0.3s;
+}
+.list-type1 li:hover figure::before,
+.list-type1 li:hover figure::after  {
+	opacity:1;
+}
 .list-type1 figcaption {
 	padding: 2rem;
 	/* position:relative; */
 }
-
 .list-type1 h2 {
 	padding: 0 0 4rem;
 	max-height: 69px;
@@ -175,6 +188,27 @@
 .list-type1 img {
 	width: 100%;
 	display: block;
+}
+
+/* 반응형 */
+@media (max-width:768px) {
+	.list-type1 {
+		width: 100%;
+	}
+	.list-type1 li {
+		margin:0;
+		width: 100%;
+	}
+	.list-type1 h2 {
+		font-size:2.4rem;
+	}
+	.list-type1 p {
+		font-size:2rem;
+	}
+	.acc__desc {
+		font-size:14px;
+		line-height:1.4;
+	}
 }
 
 /* 버튼 */
@@ -415,7 +449,7 @@
 	height: 28px;
 	background: url(../img/ico_share_kakao.png)no-repeat;
 }
-.btn-share2.twitter::before {
+.btn-share2.kakao::before {
 	background-image: url(../img/ico_share_kakao.PNG);
 }
 .btn-share2.facebook::before {
