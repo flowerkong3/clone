@@ -972,6 +972,11 @@ table td {
 	display: none;
 	padding: 6px 0 0;
 }
+@media (max-width:1280px) {
+	.section-share {
+		height:1000px;
+	}
+}
 @media (max-width:1000px) {
 	.br--hide {
 		display: none;
@@ -1049,8 +1054,6 @@ table td {
 	.program .table > div~div {
     margin: 20px -20px 0;
 	}
-
-	
 }
 
 
@@ -1118,9 +1121,6 @@ table td {
     flex-direction: column;
 		text-align: center;
 		gap: 7rem;
-	}
-	.section-share {
-    height: 1715px;
 	}
 	.section-invite .message {
     width: min(300px, calc(100vw - 32px));
@@ -1246,6 +1246,10 @@ table td {
 	}
 	.section-session .btn-filter span {
     padding-left: 20px;
+	}
+	.pop-filter section {
+		width:280px;
+		height:350px;
 	}
 }
 
