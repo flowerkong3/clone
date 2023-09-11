@@ -59,7 +59,11 @@ body {
 	padding: 40px 0 0;
 }
 
-/* 메인페이지 */
+/* 
+============================================================
+메인페이지 
+============================================================
+*/ 
 .home .section-visual .title {
 	padding: 10% 0 0;
 	color: var(--color-white);
@@ -69,7 +73,11 @@ body {
 }
 
 
-/* 서브페이지 */
+/* 
+============================================================
+서브페이지 
+============================================================
+*/
 .section-visual {
 	padding:10rem 0 0;
 	width: 100%;
@@ -111,7 +119,7 @@ body {
 	}
 }
 
-/* 발표/프로그램 페이지 */
+/* Sub | 발표/프로그램 페이지 */
 .contents-session .section-visual {
 	background-image: url(https://cdn.inflearn.com/infcon/infcon-2023/main-session-hero-tb.png);
 }
@@ -500,7 +508,7 @@ table td {
 	background: rgba(0, 0, 0, 0.7);
 }
 
-/* 마이페이지 */
+/* Sub | 마이페이지 */
 .section-mypage .content {
 	padding: 11rem 0;
 	text-align: center;
@@ -527,14 +535,18 @@ table td {
 }
 
 
-/* 이벤트 */
+/* Sub | 이벤트 */
 .contents-event .section-visual {
 	background-image: url(https://cdn.inflearn.com/infcon/infcon-2023/main-event-hero-pc.png);
 }
 
 
 
-/* HOME */
+/* 
+============================================================
+메인페이지 
+============================================================
+*/ 
 .home {
 	overflow: hidden;
 	text-align: center;
@@ -902,14 +914,14 @@ table td {
 	padding: 0 2rem;
 }
 .section-sns .inner {
-	padding: 7rem 0;
+	padding: 7rem 2rem;
 	max-width: 1140px;
 	background: #E5F2FF;
 	border-radius:3rem;
 }
 .section-sns .title p {
-	padding:4rem 0;
-	font-size: 3rem;
+	padding:2rem 0 4rem;
+	font-size: 2.4rem;
 }
 .section-sns .btn-wrap {
 	z-index:1;
@@ -934,14 +946,13 @@ table td {
 	padding-top: 10%;
 }
 
-.inner {}
 .section-share .info {
 	z-index:1;
 	position:relative;
 }
 .section-share .title p {
 	padding:2rem 0 4rem;
-	font-size: 2rem;
+	font-size: 1.6rem;
 }
 .section-share .btn-wrap {
 	display:flex;
@@ -965,16 +976,22 @@ table td {
 	display: none;
 }
 
-/* 반응형 */
-
 
 .w1000show {
 	display: none;
 	padding: 6px 0 0;
 }
+
+
+
+/* 
+============================================================
+반응형 
+============================================================
+*/
 @media (max-width:1280px) {
 	.section-share {
-		height:1000px;
+		height:1800px;
 	}
 }
 @media (max-width:1000px) {
@@ -1067,7 +1084,7 @@ table td {
 	}
 	/* Index */
 	.home h2 {
-		font-size: 5rem;
+		font-size: 4rem;
 	}
 	.home .section-visual .title {
     padding: 31% 10px 0;
@@ -1091,15 +1108,18 @@ table td {
 		font-size: 2.4rem;
 	}
 	.section-invite .title p {
-		font-size: 2.4rem;
+		font-size: 2rem;
 	}
 	.invite1, 
 	.invite2
 	{
     padding: 0 20px;
 	}
+	.invite2 {
+		margin-top: -22%;
+	}
 	.invite1 .title h2 {
-		font-size: 4.3rem;
+		font-size: 3.3rem;
 	}
 	.section-invite .message {
     width: min(240px, calc(100vw - 32px));
@@ -1148,7 +1168,7 @@ table td {
 		right:-6%;
 	}
 	.section-invite .title {
-		margin-top: -22%;
+		/* margin-top: -22%; */
 	}
 
 	.scroll-ltr-wrap {
@@ -1167,7 +1187,9 @@ table td {
 	.section-sns {
     padding-top: 2rem;
 	}
-
+	.section-share {
+		height: 1770px;
+	}
 
 	/* Session page */
 	.tbody .list {
