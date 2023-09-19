@@ -1,0 +1,355 @@
+@charset "utf-8";
+
+/* 공통 */
+
+.hide {
+	position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: polygon(0 0, 0 0, 0 0);
+}
+html {
+	font-size: 62.5%;
+}
+
+/* 홈 */
+.wrap {
+	margin: 0 auto;
+	max-width: 2560px;
+	width:100%;
+	text-align: center;
+	line-height: 1;
+}
+
+
+.mainBanner-section {
+	height: 100%;
+}
+.mySwiper1 {
+	width: 100%;
+	height: 100%;
+}
+
+.mySwiper1 .swiper-slide {
+	text-align: center;
+	font-size: 18px;
+	background: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.mySwiper1 .swiper-slide .txt {
+		position: absolute;
+    max-width: 1440px;
+		width:100%;
+    text-align: left;
+		font-size:4.8rem;
+		font-weight: bold;
+		line-height:1.3;
+		color: var(--color-orange);
+}
+.mySwiper1 .swiper-slide .txt__inner {
+	display:inline-block;
+}
+@media (max-width:1440px) {
+	.mySwiper1 .swiper-slide .txt__inner {
+		padding: 0 2rem;
+	}
+}
+.mySwiper1 .swiper-slide .btn-banner {
+	display:block;
+	margin: 6.4rem 0 0;
+	padding: 2.4rem 0;
+	width:21.8rem;
+	border: 1px solid var(--color-orange);
+	font-size:2.4rem;
+	text-align: center;
+	color: var(--color-orange);
+}
+
+.mySwiper1 .swiper-slide img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+.mySwiper1 .swiper-pagination-bullet-active {
+	background: var(--color-orange);
+}
+.mySwiper1 .swiper-pagination {
+	top: 95%;
+}
+.mySwiper1 .swiper-pagination-bullets .swiper-pagination-bullet {
+	margin: 0 8px;
+	width:10px;
+	height:10px;
+	background: var(--color-orange);
+}
+
+.newMenu-section {
+	padding: 13rem 0;
+	background: url(../img/index/bg_news-item.png)no-repeat left/contain;
+}
+.newMenu-section .inner {
+	display:flex;
+	gap: 13rem;
+}
+.newMenu-section .heading {
+	text-align: left;
+}
+.newMenu-section .title {
+	padding-bottom: 18rem;
+}
+
+.newMenu-list-info {
+	padding-top:6rem;
+	margin: 0 auto;
+	width:27rem;
+	text-align: center;
+}
+.newMenu-list__name {
+	color: var(--color-orange);
+	font-size:2rem;
+}
+.newMenu-list__subname {
+	display: block;
+	font-weight: lighter;
+	font-size: 1.4rem;
+}
+.newMenu-list__desc {
+	padding:2.7rem 2rem 0;
+}
+
+.mySwiper2 {
+	overflow: hidden;
+	position: relative;
+	padding-top: 9%;
+	max-width: 1000px;
+	width:100%;
+	height: 100%;
+	font-size:1.6rem;
+	line-height:1.5;
+}
+.mySwiper2 .swiper-slide img {
+	width:150px;
+}
+.mySwiper2 .swiper-slide .txt__inner {
+	display:inline-block;
+}
+.mySwiper2 .swiper-slide-active img {
+	position:relative;
+	top: -6rem;
+	scale: 1.5;
+	transition: all 0.3s;
+}
+.mySwiper2 .swiper-button-next {
+	left: 26%;
+}
+
+.mySwiper2 .swiper-button-prev {
+	left: -0.5%;
+	top:41%;
+}
+.mySwiper2 .swiper-button-next {
+	left: 30%;
+	top:41%;
+}
+.mySwiper2 .swiper-button-prev:after {
+	content:"";
+	width:2rem;
+	height:2em;
+	background: url(../img/index/bu_prev.png)no-repeat;
+}
+.mySwiper2 .swiper-button-next:after {
+	content:"";
+	top:0;
+	left:0;
+	width:2rem;
+	height:2em;
+	background: url(../img/index/bu_prev.png)no-repeat;
+	transform: scaleX(-1);
+}
+
+.signature-section {
+	display: flex;
+	align-items: center;
+	height: 75rem;
+	background: url(../img/index/bg_signature-item.png)no-repeat right ;
+}
+
+.signature-section .title strong {
+	display:block;
+}
+
+
+.notice-section {
+	padding: 6rem 0 13rem;
+}
+.notice-section h2 {
+	position:relative;
+	font-size:5rem;	
+	color: var(--color-orange);
+}
+.notice-section h2::before {
+	content: "";
+	z-index:-1;
+	position:absolute;
+	background: #ccc;
+	top:50%;
+	transform: translateY(-50%);
+	left:0;
+	width:100%;
+	height:1.5rem;
+}
+.notice-section h2 span {
+	display:inline-block;
+	padding: 0 11rem;
+	background: #fff;
+}
+
+.notice-list {
+	display: flex;
+	gap: 2rem;
+	padding: 10rem 0 0;
+}
+.notice-list li {
+	padding: 3rem;
+	border: 1px solid var(--color-orange);
+}
+.notice-list li img {
+	display:block;
+	width:100%;
+}
+.notice-info {
+	text-align: left;
+}
+.notice-info__title {
+	font-size: 3.4rem;
+	font-weight: normal;
+	color: var(--color-orange);
+}
+.notice-info__tag {
+	display:block;
+	padding: 5rem 0 3rem;
+	font-size:1.8rem;
+	color: var(--color-orange);
+}
+.notice-info__desc {
+	padding: 2.6rem 0 3rem;
+	font-size: 1.6rem;
+}
+
+
+.supporter-section {
+	display:flex;
+	align-items: center;
+	height:69rem;
+	background: url(../img/index/bg_supporter.jpg)no-repeat right;
+}
+.supporter-section .title {
+	width:auto;
+}
+.marginal-section {
+	position:relative;
+	width: 100%;
+	height: 60rem;
+	background-image: linear-gradient(to right, var(--color-light) 50%, var(--color-orange) 50%);
+}
+.marginal-section .inner {
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+	height:100%;
+}
+.marginal-section .title {
+	padding: 0 0 9rem;
+}
+.marginal-section .order p {
+	color: var(--color-orange);
+}
+.marginal-section .finder h2 {
+	color: var(--color-white);
+}
+.marginal-section .finder p {
+	color: var(--color-white);
+}
+
+.marginal-section .order-bg {
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	margin-left: -402px;
+	width: 38rem;
+	height: 41rem;
+	background: url(../img//index/bg_smartphone.png) no-repeat top;
+}
+.marginal-section .finder-bg {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: 28rem;
+	height: 28rem;
+	background: url(../img//index/bg_finder.png) no-repeat top;
+}
+
+
+/* 공통 */
+.heading {
+	text-align: left;
+}
+
+.ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  word-break: break-all;
+	max-width:300px;
+	height:40px;
+}
+
+.floating {
+	z-index: 999;
+    position: fixed;
+    bottom: 6%;
+    left: 50%;
+    margin-left: 700px;
+    width: 10rem;
+    height: 10rem;
+}
+.floating img {
+	width:100%;
+}
+
+.floating__txt {
+	opacity:0;
+	position:absolute;
+	top:-100%;
+	left:0;
+	padding: 10px 0;
+	width:100%;
+	background-color: var(--color-orange);
+	font-size:1.4rem;
+	color: var(--color-white);
+	border-radius:1rem;
+	transition: all 0.3s;
+}
+.floating__txt::before {
+	content: "";
+	position: absolute;
+	bottom: -10px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 0px;
+	height: 0px;
+	border-top: 13px solid var(--color-orange);
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+}
+.floating__txt .heart {
+	display:block;
+	padding:5px 0;
+}
+.floating:hover .floating__txt {
+	opacity:1;
+}
