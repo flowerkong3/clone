@@ -6,7 +6,9 @@ https://www.lacoste.com/kr/90-anniversary.html?utm_source=naver&utm_medium=brand
 
 
 
-## 002 인프콘2023
+## 002 인프콘2023 [20230810 ~ 20230911] 반응형
+html, css, javascript, AOS ,Naver Map API<br>
+
 https://flowerkong3.github.io/clone/002_인프콘2023/index.html
 ======================
 soruce<br>
