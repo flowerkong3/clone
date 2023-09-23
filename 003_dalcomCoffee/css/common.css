@@ -3,6 +3,8 @@
 :root {
 	/* Color */
 	--color-orange : #ff592e;
+	--color-orange2 : #fcb614;
+	--color-green : #00ac4d;
 	--color-white : #fff;
 	--color-light : #f0eae8;
 	--color-light2 : #fbf4e4;
@@ -183,4 +185,10 @@ input::-webkit-search-results-decoration{
 	height:4px;
 	background: var(--color-orange);
 	border-radius:100%;
+}
+
+
+
+[data-aos][data-aos][data-aos-easing=ease-out-back], body[data-aos-easing=ease-out-back] [data-aos] {
+	transition-timing-function: cubic-bezier(.175,.885,.32,1.275);
 }

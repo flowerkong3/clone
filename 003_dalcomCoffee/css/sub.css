@@ -1,12 +1,9 @@
 @charset "utf-8";
 
 /* 뉴스 */
-
 .contents {
 	position: relative;
 	padding:23rem 0 27rem;
-}
-.contents.news {
 	margin: 0 auto;
 	width:1300px;
 }
@@ -45,7 +42,6 @@
 
  
 .content {
-	width:130rem;
 	padding: 12rem 0 0;
 }
 .list-type1 {
@@ -118,6 +114,98 @@
 	
 
 
+
+
+/* 스토리 */
+.contents .h2 {
+	text-align: left;
+	font-size:7rem;
+}
+.list-type3 {
+	display:flex;
+	flex-wrap: wrap;
+	gap:6rem;
+	width:100%;
+}
+.list-type3 li {
+	text-align: left;
+	width: 30.24%;
+	border-bottom: 1px solid var(--color-dark);
+}
+.list-type3 .thumb {
+	overflow:hidden;
+}
+.list-type3 .thumb img {
+	width:100%;
+	transition: all 0.3s;
+}
+.list-type3 .thumb:hover img {
+	transform: scale(1.1);
+}
+.list-type3 .info {
+	padding: 4rem 0 7rem;
+}
+.list-type3 .badge {
+	font-size:1.4rem;
+	font-weight:bold;
+}
+.list-type3 .badge.event {
+	color: var(--color-orange2);
+}
+.list-type3 .badge.story {
+	color: var(--color-green);
+}
+.list-type3 .title {
+	display:block;
+	padding: 3rem 0 4rem;
+	font-size:2.2rem;
+}
+.list-type3 .desc {
+	font-size:1.6rem;
+	font-weight:bold;
+}
+.list-type3 .date {
+	display:block; 
+	padding: 6.5rem 0 0;
+	font-size:1.4rem;
+}
+
+/* 브랜드이야기 */
+
+.brandIntro__title {
+	text-align: center;
+}
+.brandIntro__title .h2 {
+	font-size:5rem;
+	text-align: center;
+}
+.brandIntro__title .desc {
+	font-size:1.6rem;
+}
+
+.brandIntro .intro .visual {
+	margin: 0 auto;
+	width:91rem;
+	height:43rem;
+	background: url(../img/img_brandIntro_intro.png)no-repeat center;
+}
+.brandIntro .logoType__list {
+	display:flex;
+	flex-wrap: wrap;
+}
+.brandIntro .contents__list li {
+	background: url(../img/img_brandIntro_contents_01.png)no-repeat right;
+}
+
+
+
+/* 공통 */
+.wrap.sub .header,
+.wrap.sub .mega-menu-bg 
+{
+	background: #fff;
+}
+
 /* 페이지네이션 */
 .pagenation {
 	padding: 10rem 0 0;
@@ -165,17 +253,6 @@
 	width: 8px;
 	height:12px;
 }
-
-
-
-
-/* 공통 */
-.wrap.sub .header,
-.wrap.sub .mega-menu-bg 
-{
-	background: #fff;
-}
-
 
 
 
