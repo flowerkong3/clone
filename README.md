@@ -1,12 +1,12 @@
 ## 001 라코스테 [20230709 ~ 20230807] 반응형
-html, css, javascript, AOS ,Naver Map API<br>
-megaMenu<br>
-Mobile Menu<br>
+html, css, javascript, AOS<br>
+mega menu<br>
+mobile Menu<br>
 forEach<br>
 mouseenter<br>
 mousemove<br>
 scroll animation<br>
-Popup<br>
+popup<br>
 
 https://flowerkong3.github.io/clone/001_lacoste/index.html
 ======================
