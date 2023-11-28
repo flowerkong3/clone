@@ -30,3 +30,9 @@ https://inflearn.com/conf/infcon-2023?gad=1&gclid=Cj0KCQjwrfymBhCTARIsADXTablriL
 ======================
 soruce<br>
 https://www.dalkomm.com/
+
+## 004 네이버 블로그 20주년 [20231122 ~ ]
+### https://flowerkong3.github.io/clone/004_naver-blog-20th/index.html
+======================
+soruce<br>
+https://mkt.naver.com/p1/blog-20th-anniversary
