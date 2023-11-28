@@ -1,6 +1,6 @@
 ### 001 라코스테 [20230709 ~ 20230807] 반응형
 #### https://flowerkong3.github.io/clone/001_lacoste/index.html
-html, css, javascript, AOS<br>
+html, css, javascript,jQuery, AOS<br>
 mega menu<br>
 mobile Menu<br>
 forEach<br>
@@ -13,7 +13,8 @@ popup<br>
 
 ### 002 인프콘2023 [20230810 ~ 20230911] 반응형
 #### https://flowerkong3.github.io/clone/002_인프콘2023/index.html
-html, css, javascript, AOS ,Naver Map API<br>
+html, css, javascript, jQuery, AOS<br>
+Naver Map API<br>
 
 
 ### 003 달콤커피 [20230917 ~ ]
