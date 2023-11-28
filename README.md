@@ -10,8 +10,7 @@ scroll animation<br>
 popup<br>
 
 
-======================
-soruce<br>
+======================soruc======================<br>
 https://www.lacoste.com/kr/90-anniversary.html?utm_source=naver&utm_medium=branding&utm_campaign=kr_brandcampaign-ss23traffic_&utm_term=branding_da&utm_content=rap
 
 
@@ -21,18 +20,15 @@ https://www.lacoste.com/kr/90-anniversary.html?utm_source=naver&utm_medium=brand
 html, css, javascript, AOS ,Naver Map API<br>
 
 
-======================
-soruce<br>
+======================soruc======================<br>
 https://inflearn.com/conf/infcon-2023?gad=1&gclid=Cj0KCQjwrfymBhCTARIsADXTablriLHKHzlJVyxp5sbzm6c01BChQtCAhjb3WWFKbwtiNeHDh6WGZZEaApHHEALw_wcB
 
 ## 003 달콤커피 [20230917 ~ ]
 ### https://flowerkong3.github.io/clone/003_dalcomCoffee/index.html
-======================
-soruce<br>
+======================soruc======================<br>
 https://www.dalkomm.com/
 
 ## 004 네이버 블로그 20주년 [20231122 ~ ]
 ### https://flowerkong3.github.io/clone/004_naver-blog-20th/index.html
-======================
-soruce<br>
+======================soruc======================<br>
 https://mkt.naver.com/p1/blog-20th-anniversary
