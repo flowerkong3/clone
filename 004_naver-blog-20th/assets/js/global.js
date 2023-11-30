@@ -87,6 +87,51 @@ scrollNav();
 // })
 
 
+
+
+// timeline swiper
+  var mySwiper = new Swiper(".swiper-timeline", {
+		slidesPerView: 'auto',
+		centeredSlides: true,
+    // autoHeight: true,
+    // autoplay: {
+    //   delay: 5000,
+    //   disableOnInteraction: false
+    // },
+    speed: 500,
+    direction: "horizontal",
+    navigation: {
+      nextEl: ".timeline .swiper-button-next",
+      prevEl: ".timeline .swiper-button-prev"
+    },
+    pagination: {
+      el: ".timeline .swiper-pagination",
+      type: "progressbar"
+    },
+    loop: false,
+    effect: "slide",
+    spaceBetween: 30,
+    on: {
+      init: function () {
+        $(".swiper-pagination-custom .swiper-pagination-switch").removeClass("active");
+        $(".swiper-pagination-custom .swiper-pagination-switch").eq(0).addClass("active");
+      },
+      slideChangeTransitionStart: function () {
+        $(".swiper-pagination-custom .swiper-pagination-switch").removeClass("active");
+        $(".swiper-pagination-custom .swiper-pagination-switch").eq(mySwiper.realIndex).addClass("active");
+      }
+    }
+  });
+  $(".swiper-pagination-custom .swiper-pagination-switch").click(function () {
+    mySwiper.slideTo($(this).index());
+    $(".swiper-pagination-custom .swiper-pagination-switch").removeClass("active");
+    $(this).addClass("active");
+  });
+
+
+
+
+
 let ww = $(window).outerWidth();
 var swiper1, swiper2, swiper3, swiper4
 
