@@ -217,3 +217,41 @@ function accordion(){
 }
 
 accordion();
+
+
+
+// Mobile Menu
+const mobileMenuFunc = function(){
+	// $(".btn-mobile-menu--close").hide();
+	$(".btn-mobile-menu--open").on("click",function(){
+		$(".mobile-menu").addClass("is-show");
+		$(".btn-mobile-menu--close").addClass("is-show");
+		$(".btn-mobile-menu--open").addClass("is-hide");
+		$("header").addClass("is-fixed");
+		$('body').css('overflow','hidden');
+		$('.util__login').addClass('is-color');
+		$('.header__logo').addClass('is-color');
+	});
+	$(".btn-mobile-menu--close").on("click",function(){
+		$(".mobile-menu").removeClass("is-show");
+		$(".btn-mobile-menu--close").removeClass("is-show");
+		$(".btn-mobile-menu--open").removeClass("is-hide");
+		$("header").removeClass("is-fixed");
+		$('body').css('overflow','auto');
+		$('.util__login').removeClass('is-color');
+		$('.header__logo').removeClass('is-color')
+	});
+	$(".mobile-gnb .gnb__link").on("click",function(){
+		$(".mobile-menu").removeClass("is-show");
+		$(".btn-mobile-menu--close").removeClass("is-show");
+		$(".btn-mobile-menu--open").removeClass("is-hide");
+		$("header").removeClass("is-fixed");
+		// $('body').css('overflow','auto');
+		$('.util__login').removeClass('is-color');
+		$('.header__logo').removeClass('is-color');
+		$('.mobile-gnb .gnb__link').removeClass('is-color');
+		$(this).addClass('is-color');
+	});
+}
+
+mobileMenuFunc();
