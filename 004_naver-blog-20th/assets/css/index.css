@@ -1295,3 +1295,8 @@ margin: 0 auto; */
 	}
 }
 
+
+.swiper-change .list-type1 li img {
+	width: 100%;
+	max-width: 348px;
+}
